@@ -16,9 +16,9 @@ if (! function_exists('simplicity_setup')) :
     // remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );
     
     // For language support
-    load_theme_textdomain('simplicity', get_template_directory() . '/languages');
+    //load_theme_textdomain('simplicity', get_template_directory() . '/languages');
     
     // Add support for post formats
-    add_theme_support('post-formats', array('aside', 'link', 'gallery', 'status', 'quote', 'image') );
+    //add_theme_support('post-formats', array('aside', 'link', 'gallery', 'status', 'quote', 'image') );
   }
 endif;  // /simplicity_setup

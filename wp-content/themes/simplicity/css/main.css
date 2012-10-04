@@ -4,7 +4,46 @@
    Author's custom styles
    ========================================================================== */
 
+/* Style links */
+a {
+	text-decoration: none;
+}
 
+a:hover {
+
+}
+
+a:visited {
+
+}
+
+
+#topbar {
+	position: relative;
+	background-color: black;
+	height: 40px;
+}
+
+#topbar:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+#topbar #networks {
+	position: absolute;
+	margin-top: -10px;
+	top: 50%;
+}
+
+#topbar #networks .netwk {
+	float: right;
+	margin-right: 20px;
+}
+
+#topbar .netwk a {
+	color: #fff;
+}
 
 
 

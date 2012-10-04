@@ -1,0 +1,33 @@
+This website will be dedicated to my Portfolio and Computer interests
+
+and cover the topics of Programming, Graphic Design, and Hardware & Software. The audience will
+
+be Clients and Potential Employers. I will be adding 
+
+posts every 1 week about programming discoveries or some new artwork. 
+
+I am doing this because I'd like to represent my work online and have a portfolio for employers.
+
+
+Categories for Programming
+==========================\
+Web
+Ruby
+.Net/C#
+Javascript
+C++
+
+Categories for Graphic Design
+=============================\
+Identity
+Abstract
+Print
+Web
+Typography
+
+Categories for Hard/Software
+============================\
+Servers & Administration
+Hardware
+Networking
+Telephony

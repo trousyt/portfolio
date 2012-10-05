@@ -74,9 +74,8 @@ function register_custom_post_types() {
       'singular_label' => 'Category', 
       'rewrite' => true
     )
+  );
 }
-
-endif;
 
 /* INIT_CUSTOM_ADMIN
  * Register custom Admin CP UI functionality.

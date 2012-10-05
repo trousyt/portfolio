@@ -32,78 +32,79 @@ endif;  // /simplicity_setup
  * "taxonomies"/categories.
  */
 add_action('init', 'register_custom_post_types');
-if (! function_exists('register_custom_post_types')) :
-  function register_custom_post_types() {
+function register_custom_post_types() {
 
-    /* These labels show up in the Admin CP */
-    $labels = array(
-      'name' => _x('My Portfolio', 'post type general name'),
-      'singular_name' => _x('Project', 'post type singular name'),
-      'add_new' => _x('Add New', 'portfolio item'),
-      'add_new_item' => __('Add Project'),
-      'edit_item' => __('Edit Project'),
-      'new_item' => __('New Project'),
-      'view_item' => __('View Project'),
-      'search_items' => __('Search Portfolio'),
-      'not_found' => __('Nothing found'),
-      'not_found_in_trash' => __('Nothing found in trash'),
-      'parent_item_colon' => ''
-    );
+  /* These labels show up in the Admin CP */
+  $labels = array(
+    'name' => __('My Portfolio'),
+    'singular_name' => __('Project'),
+    'add_new' => __('Add New'),
+    'add_new_item' => __('Add Project'),
+    'edit_item' => __('Edit Project'),
+    'new_item' => __('New Project'),
+    'view_item' => __('View Project'),
+    'search_items' => __('Search Portfolio'),
+    'not_found' => __('Nothing found'),
+    'not_found_in_trash' => __('Nothing found in trash'),
+    'parent_item_colon' => ''
+  );
 
-    $args = array(
-      'labels' => $labels,
-      'public' => true,
-      'publicly_queryable' => true,
-      'show_ui' => true,
-      'query_var' => true,
-      'menu_icon' => get_stylesheet_directory_uri() . 'blah.png',
-      'rewrite' => array('slug' => 'portfolio'),
-      'capability_type' => 'post',
-      'hierarchical' => false,
-      'menu_position' => null,
-      'supports' => array('title','editor','thumbnail')
-    );
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'show_in_admin_bar' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'portfolio'),
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'menu_position' => null,
+    'supports' => array('title','editor','thumbnail')
+  );
 
-    register_post_type('portfolio', args);
-    register_taxonomy(
-      'categories', 
-      array('portfolio'), 
-      array(
-        'hierarchical' => true, 
-        'label' => 'Categories', 
-        'singular_label' => 'Category', 
-        'rewrite' => true
-      )
-    );
-  }
+  register_post_type('portfolio', args);
+  register_taxonomy(
+    'cats', 
+    array('portfolio'), 
+    array(
+      'hierarchical' => true, 
+      'label' => 'Categories', 
+      'singular_label' => 'Category', 
+      'rewrite' => true
+    )
+}
 
 endif;
 
 /* INIT_CUSTOM_ADMIN
- * Register custom admin UI functionality.
+ * Register custom Admin CP UI functionality.
  */
-add_action('admin_init', 'init_custom_admin');
-if (! function_exists('init_custom_admin')) :
-  function init_custom_admin() {
-    add_meta_box('technologies_used-meta', 'Technologies Used', 'technologies_used', 'portfolio', 'side', 'low');
-  }
+add_action('add_meta_boxes', 'init_custom_admin');
+function init_custom_admin() {
+  add_meta_box('technologies_used-meta', 'Technologies Used', 'technologies_used', 'portfolio', 'side', 'low');
+}
 
-  function technologies_used() {
-    global $post;
-    $custom = get_post_custom($post->ID);
-    $technologies_used = $custom['technologies_used'][0];
-    ?>
-    <label>Technologies:</label>
-    <input name="technologies_used" value=<?php echo $technologies_used; ?>>
-    <?php
-  }
+function technologies_used($post) {
+  $custom = get_post_custom($post->ID);
+  $technologies_used = $custom['technologies_used'][0];
 
-  /* Make sure to save the custom post data */
-  add_action('save_post', 'save_custom_post_meta');
-  function save_custom_post_meta() {
-    global $post;
-    update_post_meta($post->ID, 'technologies_used', $_POST['technologies_used']);
-  }
-endif;
+  // Print the HTML output
+  echo '<label for="technologies_used">' . __("What technologies were used for this project?") . '</label>';
+  echo '<input type="text" id="technologies_used" name="technologies_used" value="' . $technologies_used . '" />';
+}
+
+/* Make sure to save the custom post data */
+add_action('save_post', 'save_custom_post_meta');
+function save_custom_post_meta($post_id) {
+
+  // If auto-save, exit function.
+  if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+    return;
+
+  // Update the post meta data.
+  update_post_meta($post_id, 'technologies_used', $_POST['technologies_used']);
+}
 
 ?>

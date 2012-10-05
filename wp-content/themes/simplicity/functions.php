@@ -82,7 +82,7 @@ endif;
 /* INIT_CUSTOM_ADMIN
  * Register custom admin UI functionality.
  */
-add_action('admin_init', 'init_custom_admin')
+add_action('admin_init', 'init_custom_admin');
 if (! function_exists('init_custom_admin')) :
   function init_custom_admin() {
     add_meta_box('technologies_used-meta', 'Technologies Used', 'technologies_used', 'portfolio', 'side', 'low');

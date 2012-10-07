@@ -10,9 +10,11 @@
 /* Add standard support to WP */
 add_theme_support('post-thumbnails');
 
-/* SIMPLICITY_SETUP
+
+/*********************************
+ * SIMPLICITY_SETUP
  * Setup with custom theme routines.
- */
+ ********************************/
 if (! function_exists('simplicity_setup')) :
   function simplicity_setup() {
     // We are providing our own filter for excerpt_length (or using the unfiltered value)
@@ -25,12 +27,13 @@ if (! function_exists('simplicity_setup')) :
     //add_theme_support('post-formats', array('aside', 'link', 'gallery', 'status', 'quote', 'image') );
   }
 endif;  // /simplicity_setup
-add_action( 'after_setup_theme', 'simplicity_setup' );
+add_action('after_setup_theme', 'simplicity_setup');
 
-/* REGISTER_CUSTOM_POST_TYPES
+/*********************************
+ * REGISTER_CUSTOM_POST_TYPES
  * Register custom post types and add any applicable
  * "taxonomies"/categories.
- */
+ ********************************/
 function simp_register_post_types() {
 
   /* These labels show up in the Admin CP */
@@ -77,9 +80,10 @@ function simp_register_post_types() {
 }
 add_action('init', 'simp_register_post_types');
 
-/* INIT_CUSTOM_ADMIN
- * Register custom Admin CP UI functionality.
- */
+/*********************************
+ * INIT_CUSTOM_ADMIN
+ * Register custom admin CP UI functionality.
+ ********************************/
 function simp_init_custom_admin() {
   add_meta_box('technologies_used-meta', 'Technologies Used', 'technologies_used', 'portfolio', 'side', 'low');
 }
@@ -106,16 +110,10 @@ function simp_save_post_meta($post_id) {
   update_post_meta($post_id, 'technologies_used', $_POST['technologies_used']);
 }
 
-/* ENQUEUE STYLES
- */
-function simp_enqueue_styles() {
-	wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css', false, '1.0', 'all');
-	wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
-}
-add_action('wp_enqueue_styles', 'simp_enqueue_styles');
-
-/* ENQUEUE SCRIPTS
- */
+/*********************************
+ * ENQUEUE SCRIPTS/STYLES
+ * Enqueue javascript files and styles to be used throughout the site.
+ ********************************/
 function simp_enqueue_scripts() {
 	if (!is_admin()) {
 		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2', false);
@@ -123,6 +121,8 @@ function simp_enqueue_scripts() {
 	  wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/vendor/html5-3.6-respond-1.1.0.min.js', false, '3.6', false);
 	  wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min', array('jquery'), '1.0', false);
 	  wp_enqueue_script('plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '1.0', false);
+		wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css', false, '1.0', 'all');
+		wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
 	}
 }
 add_action('wp_enqueue_scripts', 'simp_enqueue_scripts');

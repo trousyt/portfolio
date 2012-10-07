@@ -20,7 +20,6 @@
 
 	<!-- CSS/JAVASCRIPT -->
 	<?php wp_head(); ?>
-  
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   
 </head>

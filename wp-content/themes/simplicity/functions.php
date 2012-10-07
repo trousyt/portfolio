@@ -31,7 +31,7 @@ add_action( 'after_setup_theme', 'simplicity_setup' );
  * Register custom post types and add any applicable
  * "taxonomies"/categories.
  */
-function register_custom_post_types() {
+function simp_register_post_types() {
 
   /* These labels show up in the Admin CP */
   $labels = array(
@@ -75,15 +75,15 @@ function register_custom_post_types() {
     )
   );
 }
-add_action('init', 'register_custom_post_types');
+add_action('init', 'simp_register_post_types');
 
 /* INIT_CUSTOM_ADMIN
  * Register custom Admin CP UI functionality.
  */
-function init_custom_admin() {
+function simp_init_custom_admin() {
   add_meta_box('technologies_used-meta', 'Technologies Used', 'technologies_used', 'portfolio', 'side', 'low');
 }
-add_action('add_meta_boxes', 'init_custom_admin');
+add_action('add_meta_boxes', 'simp_init_admin');
 
 function technologies_used($post) {
   $custom = get_post_custom($post->ID);
@@ -95,8 +95,8 @@ function technologies_used($post) {
 }
 
 /* Make sure to save the custom post data */
-add_action('save_post', 'save_custom_post_meta');
-function save_custom_post_meta($post_id) {
+add_action('save_post', 'simp_save_post_meta');
+function simp_save_post_meta($post_id) {
 
   // If auto-save, exit function.
   if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
@@ -106,9 +106,17 @@ function save_custom_post_meta($post_id) {
   update_post_meta($post_id, 'technologies_used', $_POST['technologies_used']);
 }
 
+/* ENQUEUE STYLES
+ */
+function simp_enqueue_styles() {
+	wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css', false, '1.0', 'all');
+	wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
+}
+add_action('wp_enqueue_styles', 'simp_enqueue_styles');
+
 /* ENQUEUE SCRIPTS
  */
-function enqueue_scripts() {
+function simp_enqueue_scripts() {
 	if (!is_admin()) {
 		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2', false);
 	  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', false);
@@ -117,6 +125,6 @@ function enqueue_scripts() {
 	  wp_enqueue_script('plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '1.0', false);
 	}
 }
-add_action('wp_enqueue_scripts', 'enqueue_scripts');
+add_action('wp_enqueue_scripts', 'simp_enqueue_scripts');
 
 ?>

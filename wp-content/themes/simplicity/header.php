@@ -19,10 +19,14 @@
   <meta name="keywords" content="programming, computers, graphic design, ruby, rails, javascript, software, architecture, design" />
 
   <!-- Add meta data about this specific page and insert into head -->
-  
-  <!-- CSS & OTHER LINK-RELS -->
+
+	<!-- CSS & OTHER LINK-RELS -->
   <?php wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css', false, '1.0', 'all');  ?>
   <?php wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all'); ?>
+
+	<?php wp_head(); ?>
+  
+  
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   
 </head>

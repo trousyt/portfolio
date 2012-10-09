@@ -23,14 +23,15 @@
 	</div>
 	<div id="body-nav">
 		<ul class="unstyled">
-			<li><a href="#" title="Contact">Contact</a></li>
-			<li><a href="#" title="About Me">About</a></li>
-			<li><a href="#" title="Work">Work</a></li>
-			<li><a href="#" title="Blog">Blog</a></li>
+			<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
+			<li class="about-button"><a href="#" title="About Me">About</a></li>
+			<li class="work-button"><a href="#" title="Work">Work</a></li>
+			<li class="blog-button"><a href="#" title="Blog">Blog</a></li>
 		</ul>
 	</div>
 
-	<div id="contact-me" class="rotate15">
+	<!-- #contact-me -->
+	<div id="contact-me" class="rotate-neg15">
 		<div class="span5 offset3">
 			<form id="contact-form">
 				<div class="row">
@@ -44,6 +45,7 @@
 			</form>
 		</div>
 	</div>
+	<!-- /#contact-me -->
 </div>
 <!-- /#body-content -->
 

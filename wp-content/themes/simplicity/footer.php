@@ -18,6 +18,11 @@
 					<abbr title="Telephone">tel</abbr>
 				</div>
 			</div>
+			<div class="row">
+				<div class="span8 offset2">
+					<em>Built with love by Troy Parkinson</em>
+				</div>
+			</div>
 		</div>
 
 	</div>

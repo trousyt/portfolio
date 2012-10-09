@@ -17,13 +17,41 @@ a:visited {
 
 }
 
+/* Additional primitive styles */
 .strong {
 	font-weight: bold;
 }
-.rotate15 {
-
+.centered-text {
+	text-align: center;
+}
+.rotate-neg15 {
+	transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
 }
 
+
+/* Page-specific styles */
+.contact-button {
+	background-color: #ff3177;
+}
+.about-button {
+	background-color: #f7ab6a;
+}
+.work-button {
+	background-color: #44e497;
+}
+.blog-button {
+	background-color: #7dc4ed;
+}
+.contact-button, .about-button, .work-button, .blog-button {
+	margin: 0;
+	padding: 0;
+	height: 72px;
+	width: 280px;
+}
 
 
 #contact-me {

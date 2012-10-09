@@ -35,6 +35,9 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 .centered-text {
 	text-align: center;
 }
+.centered-block {
+	margin: 0 auto;
+}
 .rotate-neg5 {
 	transform: rotate(-5deg);
 	-ms-transform: rotate(-5deg);
@@ -49,9 +52,7 @@ ul.collapse-list li {
 	content: " ";
 	clear: both;
 }
-.hero-btn {
-	margin: 0 auto;
-}
+
 
 /* Button Styles */
 .contact-button {

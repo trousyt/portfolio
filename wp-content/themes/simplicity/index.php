@@ -9,25 +9,38 @@
 ?>
 
 <?php get_header(); ?>
+
+<!-- #header -->
+<div class="row">
+	<div class="span2">
+		<!-- Logo Here -->
+	</div>
+</div>
+<!-- /#header -->
+
+<!-- #hero -->
 <div class="row">
 	<div id="hero" class="span10">
 		<h1 class="inline strong">Hi,</h1> <h2 class="inline">my name is <strong>Troy Parkinson</strong> and I'm a software engineer, graphic designer, and gosh-darnit, <em>good guy</em> that loves to create <em>practical</em> web apps, iOS apps, and other intuitive software that works using standards-driven design.</h2>
 		<button class="btn btn-primary btn-large">Contact me today to <strong>have a chat</strong>.</button>
 	</div>
 </div>
+<!-- /#hero -->
 
 <!-- #body-content -->
 <div id="body-content" class="row">
-	<div id="slider" class="span6">
-		<!-- Slider code here -->Some placeholder text
-	</div>
-	<div id="body-nav" class="span4">
-		<ul class="unstyled">
-			<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
-			<li class="about-button"><a href="#" title="About Me">About</a></li>
-			<li class="work-button"><a href="#" title="Work">Work</a></li>
-			<li class="blog-button"><a href="#" title="Blog">Blog</a></li>
-		</ul>
+	<div class="content-header row">
+		<div id="slider" class="span6">
+			<!-- Slider code here -->Some placeholder text
+		</div>
+		<div id="body-nav" class="span4">
+			<ul class="unstyled">
+				<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
+				<li class="about-button"><a href="#" title="About Me">About</a></li>
+				<li class="work-button"><a href="#" title="Work">Work</a></li>
+				<li class="blog-button"><a href="#" title="Blog">Blog</a></li>
+			</ul>
+		</div>
 	</div>
 
 	<!-- #contact-me -->

@@ -26,15 +26,15 @@
 <body <?php body_class(); ?>>
 	<div id="container">
 		<!-- #topbar -->
-    <div id="topbar">
+    <div id="topbar" class="row">
       <div class="span10 offset2">
         <ul class="unstyled collapse-list pull-right">
           <li><a href="#">GitHub</a></li>
           <li><a href="#">Follow me on Twitter</a></li>
           <li><a href="#">Follow me on LinkedIn</a></li>
         </ul>
-    </div>
+      </div>
     </div>
     <!-- /#topbar -->
     <!-- #content -->
-    <div class="content" class="span10 offset2">
+    <div class="content" class="span10 offset2 row">

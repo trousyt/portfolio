@@ -55,6 +55,15 @@ ul.collapse li {
 	width: 100%;
 }
 
+#topbar {
+	margin: 0;
+	padding: 0;
+}
+#topbar:after {
+	content: " ";
+	clear: both;
+}
+
 #contact-me {
 
 }

@@ -31,7 +31,7 @@
 	</div>
 
 	<!-- #contact-me -->
-	<div id="contact-me" class="rotate-neg15">
+	<div id="contact-me" class="rotate-neg10">
 		<div class="span5 offset3">
 			<form id="contact-form">
 				<div class="row">

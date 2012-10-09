@@ -24,12 +24,12 @@ a:visited {
 .centered-text {
 	text-align: center;
 }
-.rotate-neg15 {
-	transform: rotate(-15deg);
-	-ms-transform: rotate(-15deg);
-	-webkit-transform: rotate(-15deg);
-	-o-transform: rotate(-15deg);
-	-moz-transform: rotate(-15deg);
+.rotate-neg10 {
+	transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
 }
 
 

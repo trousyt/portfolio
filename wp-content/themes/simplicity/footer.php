@@ -14,8 +14,8 @@
 				</div>
 				<div id="rmost" class="span4 offset2">
 					<h4>Contact Me</h4>
-					<a href="mailto:#">troy@troypark.com</a>
-					<abbr title="Telephone">tel</abbr>
+					<div><a href="mailto:#">troy@troypark.com</a></div>
+					<div><abbr title="Telephone">tel:</abbr> <a href="tel:17022859127">+1 702 285-9127</a></div>
 				</div>
 			</div>
 			<div class="row">

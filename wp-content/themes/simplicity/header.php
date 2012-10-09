@@ -27,11 +27,13 @@
 	<div id="container">
 		<!-- #topbar -->
     <div id="topbar" class="span12">
-      <ul class="unstyled">
-        <li>GitHub</li>
-        <li>Follow me on Twitter</li>
-        <li>Follow me on LinkedIn</li>
-      </ul>
+      <div class="span10 offset2">
+        <ul class="unstyled collapse pull-right">
+          <li>GitHub</li>
+          <li>Follow me on Twitter</li>
+          <li>Follow me on LinkedIn</li>
+        </ul>
+    </div>
     </div>
     <!-- /#topbar -->
     <!-- #content -->

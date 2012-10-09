@@ -18,10 +18,10 @@
 
 <!-- #body-content -->
 <div id="body-content" class="row">
-	<div id="slider">
+	<div id="slider" class="span6">
 		<!-- Slider code here -->
 	</div>
-	<div id="body-nav">
+	<div id="body-nav" class="span4">
 		<ul class="unstyled">
 			<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
 			<li class="about-button"><a href="#" title="About Me">About</a></li>
@@ -31,7 +31,7 @@
 	</div>
 
 	<!-- #contact-me -->
-	<div id="contact-me" class="rotate-neg10">
+	<div id="contact-me" class="rotate-neg5">
 		<div class="span5 offset3">
 			<form id="contact-form">
 				<div class="row">

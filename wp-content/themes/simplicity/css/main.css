@@ -24,14 +24,16 @@ a:visited {
 .centered-text {
 	text-align: center;
 }
-.rotate-neg10 {
-	transform: rotate(-10deg);
-	-ms-transform: rotate(-10deg);
-	-webkit-transform: rotate(-10deg);
-	-o-transform: rotate(-10deg);
-	-moz-transform: rotate(-10deg);
+.rotate-neg5 {
+	transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
 }
-
+ul.collapse li {
+	display: inline-block;
+}
 
 /* Page-specific styles */
 .contact-button {
@@ -50,15 +52,15 @@ a:visited {
 	margin: 0;
 	padding: 0;
 	height: 72px;
-	width: 280px;
+	width: 100%;
 }
-
 
 #contact-me {
 
 }
 
 #body-content #slider {
+	width: 100%;
 	background-color: #f2f2f2;
 }
 

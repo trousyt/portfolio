@@ -37,5 +37,14 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="container">
-		<!-- Topbar -->
-    
+		<!-- #topbar -->
+    <div id="topbar" class="span12">
+      <ul class="unstyled">
+        <li>GitHub</li>
+        <li>Follow me on Twitter</li>
+        <li>Follow me on LinkedIn</li>
+      </ul>
+    </div>
+    <!-- /#topbar -->
+    <!-- #content -->
+    <div class="content" class="span10 offset2">

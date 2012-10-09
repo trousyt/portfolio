@@ -32,6 +32,9 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 .strong {
 	font-weight: bold;
 }
+.large {
+	font-size: 1.2em;
+}
 .centered-text {
 	text-align: center;
 }

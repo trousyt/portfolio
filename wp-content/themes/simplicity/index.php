@@ -22,8 +22,10 @@
 <!-- #hero -->
 <div class="row">
 	<div id="hero" class="span10">
-		<h1 class="inline strong">Hi,</h1> <h2 class="inline">my name is <strong>Troy Parkinson</strong> and I'm a software engineer, graphic designer, and gosh-darnit, good guy that loves to create <em>practical</em> web apps, iOS apps, and other intuitive software that works using standards-driven design.</h2>
-		<button class="btn btn-primary btn-large centered-block">Contact me today to <strong>have a chat</strong>.</button>
+		<h1><span class="large">Hi,</span> my name is <strong>Troy Parkinson</strong> and I'm a software engineer, graphic designer, and gosh-darnit, good guy that loves to create <em>practical</em> web apps, iOS apps, and other intuitive software that works using standards-driven design.</h1>
+		<div class="row">
+			<button class="btn btn-primary btn-large centered-block">Contact me today to <strong>have a chat</strong>.</button>
+		</div>
 	</div>
 </div>
 <!-- /#hero -->

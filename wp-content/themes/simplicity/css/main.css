@@ -33,7 +33,10 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 	font-weight: bold;
 }
 .large {
-	font-size: 1.2em;
+	font-size: 1.4em;
+}
+.btn-hero {
+	width: 300px;
 }
 .centered-text {
 	text-align: center;

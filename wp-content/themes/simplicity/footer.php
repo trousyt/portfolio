@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="span8 offset2">
+				<div class="span8 offset2 centered-text">
 					<em>Built with love by Troy Parkinson</em>
 				</div>
 			</div>

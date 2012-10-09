@@ -84,7 +84,12 @@ ul.collapse-list li {
 	margin-left: 20px; 
 }
 #topbar ul li a {
-	text-decoration: underline;
+	color: white;
+	text-decoration: none;
+}
+#topbar ul li a:hover {
+	color: white;
+	border-bottom: 1px dotted white;
 }
 
 #btmbar {

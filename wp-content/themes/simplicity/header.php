@@ -18,21 +18,9 @@
   <meta name="copyright" content="Copyright (c)2012 Troy Parkinson. All rights reserved." />
   <meta name="keywords" content="programming, computers, graphic design, ruby, rails, javascript, software, architecture, design" />
 
-  <!-- Add meta data about this specific page and insert into head -->
-  
-  <!-- CSS & OTHER LINK-RELS -->
-  <?php wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css', false, '1.0', 'all');  ?>
-  <?php wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all'); ?>
+	<!-- CSS/JAVASCRIPT -->
+	<?php wp_head(); ?>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  
-  <!-- JS -->
-  <?php 
- 	 	wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2', false);
-	  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', false);
-	  wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/vendor/html5-3.6-respond-1.1.0.min.js', false, '3.6', false);
-	  wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min', array('jquery'), '1.0', false);
-	  wp_enqueue_script('plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '1.0', false);
-  ?>
   
 </head>
 <body <?php body_class(); ?>>

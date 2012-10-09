@@ -10,10 +10,11 @@
 /* Add standard support to WP */
 add_theme_support('post-thumbnails');
 
-/* SIMPLICITY_SETUP
+
+/*********************************
+ * SIMPLICITY_SETUP
  * Setup with custom theme routines.
- */
-add_action( 'after_setup_theme', 'simplicity_setup' );
+ ********************************/
 if (! function_exists('simplicity_setup')) :
   function simplicity_setup() {
     // We are providing our own filter for excerpt_length (or using the unfiltered value)
@@ -26,13 +27,14 @@ if (! function_exists('simplicity_setup')) :
     //add_theme_support('post-formats', array('aside', 'link', 'gallery', 'status', 'quote', 'image') );
   }
 endif;  // /simplicity_setup
+add_action('after_setup_theme', 'simplicity_setup');
 
-/* REGISTER_CUSTOM_POST_TYPES
+/*********************************
+ * REGISTER_CUSTOM_POST_TYPES
  * Register custom post types and add any applicable
  * "taxonomies"/categories.
- */
-add_action('init', 'register_custom_post_types');
-function register_custom_post_types() {
+ ********************************/
+function simp_register_post_types() {
 
   /* These labels show up in the Admin CP */
   $labels = array(
@@ -76,14 +78,16 @@ function register_custom_post_types() {
     )
   );
 }
+add_action('init', 'simp_register_post_types');
 
-/* INIT_CUSTOM_ADMIN
- * Register custom Admin CP UI functionality.
- */
-add_action('add_meta_boxes', 'init_custom_admin');
-function init_custom_admin() {
+/*********************************
+ * INIT_CUSTOM_ADMIN
+ * Register custom admin CP UI functionality.
+ ********************************/
+function simp_init_custom_admin() {
   add_meta_box('technologies_used-meta', 'Technologies Used', 'technologies_used', 'portfolio', 'side', 'low');
 }
+add_action('add_meta_boxes', 'simp_init_admin');
 
 function technologies_used($post) {
   $custom = get_post_custom($post->ID);
@@ -95,8 +99,8 @@ function technologies_used($post) {
 }
 
 /* Make sure to save the custom post data */
-add_action('save_post', 'save_custom_post_meta');
-function save_custom_post_meta($post_id) {
+add_action('save_post', 'simp_save_post_meta');
+function simp_save_post_meta($post_id) {
 
   // If auto-save, exit function.
   if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
@@ -105,5 +109,22 @@ function save_custom_post_meta($post_id) {
   // Update the post meta data.
   update_post_meta($post_id, 'technologies_used', $_POST['technologies_used']);
 }
+
+/*********************************
+ * ENQUEUE SCRIPTS/STYLES
+ * Enqueue javascript files and styles to be used throughout the site.
+ ********************************/
+function simp_enqueue_scripts() {
+	if (!is_admin()) {
+		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2', false);
+	  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', false);
+	  wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/vendor/html5-3.6-respond-1.1.0.min.js', false, '3.6', false);
+	  wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min', array('jquery'), '1.0', false);
+	  wp_enqueue_script('plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '1.0', false);
+		wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css', false, '1.0', 'all');
+		wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
+	}
+}
+add_action('wp_enqueue_scripts', 'simp_enqueue_scripts');
 
 ?>

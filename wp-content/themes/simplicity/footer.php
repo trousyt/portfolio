@@ -2,7 +2,7 @@
 		<!-- /#content -->
 
 		<!-- #btmbar -->
-		<div id="btmbar" class="span12">
+		<div id="btmbar" class="span12 row">
 			<div class="row">
 				<div id="sitemap" class="span4 offset2">
 					<ul class="unstyled">

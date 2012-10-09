@@ -11,9 +11,10 @@
 <?php get_header(); ?>
 
 <!-- #header -->
-<div class="row">
+<div id="index-header" class="row">
 	<div class="span2">
 		<!-- Logo Here -->
+		Logo Placeholder
 	</div>
 </div>
 <!-- /#header -->

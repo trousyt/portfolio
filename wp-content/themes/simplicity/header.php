@@ -29,9 +29,9 @@
     <div id="topbar">
       <div class="span10 offset2">
         <ul class="unstyled collapse-list pull-right">
-          <li>GitHub</li>
-          <li>Follow me on Twitter</li>
-          <li>Follow me on LinkedIn</li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Follow me on Twitter</a></li>
+          <li><a href="#">Follow me on LinkedIn</a></li>
         </ul>
     </div>
     </div>

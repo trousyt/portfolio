@@ -17,6 +17,10 @@ a:visited {
 
 }
 
+.body {
+
+}
+
 /* Additional primitive styles */
 .strong {
 	font-weight: bold;
@@ -31,7 +35,7 @@ a:visited {
 	-o-transform: rotate(-5deg);
 	-moz-transform: rotate(-5deg);
 }
-ul.collapse li {
+ul.collapse-list li {
 	display: inline-block;
 }
 .clear:after {
@@ -69,7 +73,7 @@ ul.collapse li {
 }
 
 #contact-me {
-
+	margin: 20px 0 20px 0;
 }
 
 #body-content #slider {

@@ -18,18 +18,16 @@
 
 <!-- #body-content -->
 <div id="body-content" class="row">
-	<div class="row">
-		<div id="slider" class="span6">
-			<!-- Slider code here -->Some placeholder text
-		</div>
-		<div id="body-nav" class="span4">
-			<ul class="unstyled">
-				<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
-				<li class="about-button"><a href="#" title="About Me">About</a></li>
-				<li class="work-button"><a href="#" title="Work">Work</a></li>
-				<li class="blog-button"><a href="#" title="Blog">Blog</a></li>
-			</ul>
-		</div>
+	<div id="slider" class="span6">
+		<!-- Slider code here -->Some placeholder text
+	</div>
+	<div id="body-nav" class="span4">
+		<ul class="unstyled">
+			<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
+			<li class="about-button"><a href="#" title="About Me">About</a></li>
+			<li class="work-button"><a href="#" title="Work">Work</a></li>
+			<li class="blog-button"><a href="#" title="Blog">Blog</a></li>
+		</ul>
 	</div>
 
 	<!-- #contact-me -->

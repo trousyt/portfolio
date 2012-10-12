@@ -11,11 +11,12 @@
 <?php get_header(); ?>
 
 <!-- #header -->
-<div id="index-header" class="row">
+<div id="index-header" class="row span10">
 	<div class="span2">
 		<!-- Logo Here -->
 		Logo Placeholder
 	</div>
+	<div class="divider"></div>
 </div>
 <!-- /#header -->
 
@@ -37,7 +38,7 @@
 			<!-- Slider code here -->Some placeholder text
 		</div>
 		<div id="body-nav" class="span4">
-			<div class="nav-arrow"></div>
+			<div class="arrow"></div>
 			<ul class="unstyled">
 				<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
 				<li class="about-button"><a href="#" title="About Me">About</a></li>

@@ -80,6 +80,8 @@ ul.collapse-list li {
 	width: 100%;
 }
 
+
+/* Page-Specific Styles */
 /* Topbar Styling */
 #topbar {
 	margin: 0;
@@ -137,23 +139,29 @@ ul.collapse-list li {
 	background-color: #f2f2f2;
 }
 
-/* Page-Specific Styles */
 /* Index */
 #index-header {
 	border-bottom: 2px solid black;
 	height: 80px;
 }
-
-#hero h1 {
-	line-height: 2em;
+#index-header .divider {
+	width: 100%;
+	height: 17px;
+	background: url('../layout_main-header-border-btm.png') repeat-x;
 }
 
-.nav-arrow {
-	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;
-	height: 95px;
-	width: 127px;
+#hero h1 {
+	align: center;
+	line-height: 1.2em;
+}
+
+#body-nav .arrow {
 	position: relative;
 	top: -20px;
+	height: 95px;
+	width: 127px;
+	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;
+	margin-left: 100px;
 }
 
 #contact-form input[type='text'] {

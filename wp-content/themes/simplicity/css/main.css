@@ -18,7 +18,7 @@ a:visited {
 }
 
 body {
-
+	background: url('../img/layout_main-background.png') repeat;
 }
 
 h1, h2 {
@@ -141,6 +141,19 @@ ul.collapse-list li {
 /* Index */
 #index-header {
 	border-bottom: 2px solid black;
+	height: 80px;
+}
+
+#hero h1 {
+	line-height: 2em;
+}
+
+.nav-arrow {
+	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;
+	height: 95px;
+	width: 127px;
+	position: relative;
+	top: -20px;
 }
 
 #contact-form input[type='text'] {

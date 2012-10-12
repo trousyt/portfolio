@@ -37,6 +37,7 @@
 			<!-- Slider code here -->Some placeholder text
 		</div>
 		<div id="body-nav" class="span4">
+			<div class="nav-arrow"></div>
 			<ul class="unstyled">
 				<li class="contact-button"><a href="#" title="Contact">Contact</a></li>
 				<li class="about-button"><a href="#" title="About Me">About</a></li>

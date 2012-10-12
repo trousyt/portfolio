@@ -33,7 +33,7 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 	font-weight: bold;
 }
 .large {
-	font-size: 1.4em;
+	font-size: 2em;
 }
 .btn-hero {
 	width: 300px;
@@ -134,7 +134,6 @@ ul.collapse-list li {
 }
 
 #body-content #slider {
-	width: 100%;
 	background-color: #f2f2f2;
 }
 
@@ -144,4 +143,9 @@ ul.collapse-list li {
 	border-bottom: 2px solid black;
 }
 
-
+#contact-form input[type='text'] {
+	width: 315px;
+}
+#contact-form textarea {
+	width: 365px;
+}

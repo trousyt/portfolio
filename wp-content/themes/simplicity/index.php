@@ -32,7 +32,7 @@
 
 <!-- #body-content -->
 <div id="body-content" class="row">
-	<div class="content-header row">
+	<div class="content-header row span10">
 		<div id="slider" class="span6">
 			<!-- Slider code here -->Some placeholder text
 		</div>

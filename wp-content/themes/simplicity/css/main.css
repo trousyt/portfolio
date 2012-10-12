@@ -147,12 +147,13 @@ ul.collapse-list li {
 #index-header-divider {
 	width: 100%;
 	height: 100%;
-	background: url('../img/layout_main-header-border-btm.png') repeat-x left bottom;
+	background: url('../img/layout_main-header-border-btm.png') repeat-x left b;
 }
 
 #hero h1 {
 	text-align: center;
 	line-height: 1.2em;
+	font-weight: normal;
 }
 
 #body-nav .arrow {

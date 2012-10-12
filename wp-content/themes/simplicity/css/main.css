@@ -81,6 +81,15 @@ ul.collapse-list li {
 	background-color: #7dc4ed;
 }
 
+#body-nav .arrow {
+	position: relative;
+	margin-left: 100px;
+	top: -60px;
+	height: 95px;
+	width: 127px;
+	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;
+}
+
 
 /* Page-Specific Styles */
 /* Topbar Styling */
@@ -131,6 +140,7 @@ ul.collapse-list li {
 
 #contact-me {
 	margin: 40px 0 20px 0;
+	height: 460px;
 	background: url('../img/layout_main-contact-me-background.png');
 }
 
@@ -155,15 +165,6 @@ ul.collapse-list li {
 	text-align: center;
 	line-height: 1.2em;
 	font-weight: normal;
-}
-
-#body-nav .arrow {
-	position: relative;
-	margin-left: 100px;
-	top: -60px;
-	height: 95px;
-	width: 127px;
-	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;
 }
 
 #contact-form input[type='text'], input[type='email'] {

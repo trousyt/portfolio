@@ -11,12 +11,12 @@
 <?php get_header(); ?>
 
 <!-- #header -->
-<div id="index-header" class="row">
-	<div class="span10 offset1">
+<div id="index-header" class="span10 offset 1row">
+	<div>
 		<!-- Logo Here -->
 		Logo Placeholder
-		<div id="index-header-divider"></div>
 	</div>
+	<div id="index-header-divider"></div>
 </div>
 
 <!-- /#header -->
@@ -49,8 +49,8 @@
 		</div>
 
 		<!-- #contact-me -->
-		<div id="contact-me" class="row">
-			<div class="span5 offset3 rotate-neg5 ">
+		<div id="contact-me" class="row rotate-neg5 ">
+			<div class="span5 offset3">
 				<form id="contact-form">
 					<div class="row">
 						<input id="name" type="text" placeholder="Name" />

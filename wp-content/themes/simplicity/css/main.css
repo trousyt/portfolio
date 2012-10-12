@@ -21,7 +21,7 @@ body {
 	background: url('../img/layout_main-background.png') repeat;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Archivo Narrow', sans-serif;
 }
 h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
@@ -62,7 +62,7 @@ ul.collapse-list li {
 	position: relative;
 	top: -60px;
 	margin: 0;
-	padding: 60px 0 10px 20px;
+	padding: 0 0 0 60px;
 	height: 72px;
 	width: 280px;
 	/*background: url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;*/

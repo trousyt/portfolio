@@ -35,9 +35,6 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 .large {
 	font-size: 2em;
 }
-.btn-hero {
-	width: 300px;
-}
 .centered-text {
 	text-align: center;
 }
@@ -140,6 +137,7 @@ ul.collapse-list li {
 
 #contact-me {
 	margin: 80px 0 80px 0;
+	padding: 50px 0 40px 0;
 	height: 460px;
 	width: 830px;
 	background: url('../img/layout_main-contact-me-background.png');
@@ -166,6 +164,9 @@ ul.collapse-list li {
 	text-align: center;
 	line-height: 1.2em;
 	font-weight: normal;
+}
+#hero .btn {
+	width: 300px;
 }
 
 #contact-form input[type='text'], input[type='email'] {

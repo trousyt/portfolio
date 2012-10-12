@@ -58,9 +58,21 @@ ul.collapse-list li {
 
 
 /* Button Styles */
+.contact-button {
+	background: #ff3177 url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+}
+.about-button {
+	background: #f7ab6a url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+}
+.work-button {
+	background: #44e497 url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+}
+.blog-button {
+	background: #7dc4ed url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+}
 #body-nav li {
 	position: relative;
-	top: -60px;
+	top: -50px;
 	margin: 0;
 	padding: 0 0 0 60px;
 	height: 72px;
@@ -69,25 +81,12 @@ ul.collapse-list li {
 }
 #body-nav a {
 	font-family: 'Scada', sans-serif;
-	font-size: 3em;
+	font-size: 4em;
 	color: white;
 }
 #body-nav a:hover {
 	text-decoration: none;
 }
-.contact-button {
-	background: #ff3177 url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
-}
-.about-button {
-	background-color: #f7ab6a;
-}
-.work-button {
-	background-color: #44e497;
-}
-.blog-button {
-	background-color: #7dc4ed;
-}
-
 #body-nav .arrow {
 	position: relative;
 	margin-left: 100px;
@@ -173,7 +172,7 @@ ul.collapse-list li {
 }
 
 #contact-me {
-	margin: 80px 0 80px 0;
+	margin: 40px 0 40px 0;
 	padding: 50px 0 60px 0;
 	height: 460px;
 	width: 830px;

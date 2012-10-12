@@ -27,7 +27,7 @@
 	<div id="container">
 		<!-- #topbar -->
     <div id="topbar" class="row">
-      <div class="span10 offset2">
+      <div class="span12">
         <ul class="unstyled collapse-list pull-right">
           <li><a href="#">GitHub</a></li>
           <li><a href="#">Follow me on Twitter</a></li>

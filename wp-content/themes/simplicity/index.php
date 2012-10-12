@@ -12,11 +12,11 @@
 
 <!-- #header -->
 <div id="index-header" class="row">
-	<div class="span10 offset 2">
+	<div class="span10 offset2">
 		<!-- Logo Here -->
 		Logo Placeholder
 	</div>
-	<div id="index-header-divider" class="span12" style="clear:both; height: 100%;"></div>
+	<div id="index-header-divider"></div>
 </div>
 
 <!-- /#header -->
@@ -34,7 +34,7 @@
 	<!-- #body-content -->
 	<div id="body-content" class="row">
 		<div class="content-header row">
-			<div id="slider" class="span4">
+			<div id="slider" class="span5">
 				<!-- Slider code here -->Some placeholder text
 			</div>
 			<div id="body-nav" class="span4">

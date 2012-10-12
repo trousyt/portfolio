@@ -147,9 +147,12 @@ ul.collapse-list li {
 #index-header-divider {
 	width: 100%;
 	height: 100%;
-	background: url('../img/layout_main-header-border-btm.png') repeat-x left b;
+	background: url('../img/layout_main-header-border-btm.png') repeat-x left bottom;
 }
 
+#hero {
+	margin-bottom: 60px;
+}
 #hero h1 {
 	text-align: center;
 	line-height: 1.2em;
@@ -158,7 +161,7 @@ ul.collapse-list li {
 
 #body-nav .arrow {
 	position: relative;
-	top: -20px;
+	top: -40px;
 	height: 95px;
 	width: 127px;
 	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;

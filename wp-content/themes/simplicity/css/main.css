@@ -65,7 +65,7 @@ ul.collapse-list li {
 	margin: 0;
 	padding: 10px 0 10px 20px;
 	height: 72px;
-	width: 100%;
+	width: 280px;
 	background: url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
 }
 .contact-button {
@@ -161,11 +161,11 @@ ul.collapse-list li {
 
 #body-nav .arrow {
 	position: relative;
-	top: -40px;
+	margin-left: 100px;
+	top: -60px;
 	height: 95px;
 	width: 127px;
 	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;
-	margin-left: 100px;
 }
 
 #contact-form input[type='text'], input[type='email'] {

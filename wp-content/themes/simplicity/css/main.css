@@ -141,10 +141,9 @@ ul.collapse-list li {
 
 /* Index */
 #index-header {
-	border-bottom: 2px solid black;
 	height: 80px;
 }
-#index-header .divider {
+#index-header-divider {
 	width: 100%;
 	height: 17px;
 	background: url('../layout_main-header-border-btm.png') repeat-x;

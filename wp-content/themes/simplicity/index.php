@@ -16,8 +16,8 @@
 		<!-- Logo Here -->
 		Logo Placeholder
 	</div>
-	<div class="divider"></div>
 </div>
+<div id="index-header-divider"></div>
 <!-- /#header -->
 
 <!-- #hero -->

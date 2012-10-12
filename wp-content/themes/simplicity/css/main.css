@@ -179,8 +179,8 @@ ul.collapse-list li {
 	width: 830px;
 	background: url('../img/layout_main-contact-me-background.png') no-repeat;
 }
-#contact-me h1, h2 {
-	text-shadow: 1px 1px;
+#contact-me h2, #contact-me h3 {
+	text-shadow: 1px 1px black;
 	color: white;
 }
 #contact-me input[type='text'], input[type='email'] {

@@ -61,6 +61,13 @@ ul.collapse-list li {
 
 
 /* Button Styles */
+.contact-button, .about-button, .work-button, .blog-button {
+	margin: 0;
+	padding: 10px 0 10px 20px;
+	height: 72px;
+	width: 100%;
+	background: url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+}
 .contact-button {
 	background-color: #ff3177;
 }
@@ -72,13 +79,6 @@ ul.collapse-list li {
 }
 .blog-button {
 	background-color: #7dc4ed;
-}
-.contact-button, .about-button, .work-button, .blog-button {
-	margin: 0;
-	padding: 10px 0 10px 20px;
-	height: 72px;
-	width: 100%;
-	background: url('../img/layout_main_body-nav-button-overlay.png') repeat-x left top;
 }
 
 
@@ -151,7 +151,7 @@ ul.collapse-list li {
 }
 
 #hero {
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 #hero h1 {
 	text-align: center;

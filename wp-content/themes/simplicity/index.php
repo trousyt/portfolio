@@ -12,7 +12,7 @@
 
 <!-- #header -->
 <div id="index-header" class="row">
-	<div class="span10 offset2">
+	<div class="span10 offset1">
 		<!-- Logo Here -->
 		Logo Placeholder
 	</div>
@@ -21,7 +21,7 @@
 
 <!-- /#header -->
 
-<div class="span10 offset2">
+<div class="span10 offset1">
 	<!-- #hero -->
 	<div id="hero" class="row">
 		<h1><span class="large">Hi,</span> my name is <strong>Troy Parkinson</strong> and I'm a software engineer, graphic designer, and gosh-darnit, good guy that loves to create <em>practical</em> web apps, iOS apps, and other intuitive software that works using standards-driven design.</h1>
@@ -65,7 +65,7 @@
 		</div>
 		<!-- /#contact-me -->
 	</div>
-	<!-- /span10 offset2 -->
+	<!-- /span10 offset1 -->
 </div>
 <!-- /#body-content -->
 

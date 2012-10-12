@@ -11,8 +11,8 @@
 <?php get_header(); ?>
 
 <!-- #header -->
-<div id="index-header" class="row span10">
-	<div class="span2">
+<div id="index-header" class="row">
+	<div class="span10">
 		<!-- Logo Here -->
 		Logo Placeholder
 	</div>
@@ -22,8 +22,8 @@
 <!-- /#header -->
 
 <!-- #hero -->
-<div class="row">
-	<div id="hero" class="span10">
+<div id="hero" class="row">
+	<div class="span10">
 		<h1><span class="large">Hi,</span> my name is <strong>Troy Parkinson</strong> and I'm a software engineer, graphic designer, and gosh-darnit, good guy that loves to create <em>practical</em> web apps, iOS apps, and other intuitive software that works using standards-driven design.</h1>
 		<div class="row">
 			<button class="btn btn-primary btn-large btn-hero centered-block">Contact me today to <strong>have a chat</strong>.</button>
@@ -34,7 +34,7 @@
 
 <!-- #body-content -->
 <div id="body-content" class="row">
-	<div class="content-header row span10">
+	<div class="content-header span10 row">
 		<div id="slider" class="span4">
 			<!-- Slider code here -->Some placeholder text
 		</div>
@@ -50,8 +50,8 @@
 	</div>
 
 	<!-- #contact-me -->
-	<div id="contact-me" class="rotate-neg5 row">
-		<div class="span5 offset3">
+	<div id="contact-me" class="row">
+		<div class="span5 offset3 rotate-neg5 ">
 			<form id="contact-form">
 				<div class="row">
 					<input id="name" type="text" placeholder="Name" />

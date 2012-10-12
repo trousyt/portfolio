@@ -21,7 +21,7 @@ body {
 	background: url('../img/layout_main-background.png') repeat;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
 	font-family: 'Archivo Narrow', sans-serif;
 }
 h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
@@ -69,7 +69,7 @@ ul.collapse-list li {
 }
 #body-nav a {
 	font-family: 'Scada', sans-serif;
-	font-size: 5.14em;
+	font-size: 3em;
 	color: white;
 }
 #body-nav a:hover {
@@ -178,6 +178,7 @@ ul.collapse-list li {
 	height: 460px;
 	width: 830px;
 	background: url('../img/layout_main-contact-me-background.png') no-repeat;
+	color: white;
 }
 #contact-me input[type='text'], input[type='email'] {
 	width: 315px;

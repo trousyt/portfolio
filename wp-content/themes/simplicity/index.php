@@ -53,13 +53,15 @@
 			<div class="span5 offset3">
 				<form id="contact-form">
 					<div class="row">
+						<h2>Let's chat about anything...</h2>
 						<input id="name" type="text" placeholder="Name" />
 						<input id="email" type="email" placeholder="Email" />
 					</div>
 					<div class="row">
-						<h3>Let's chat about...</h3>
+						<h3>What's on your mind?</h3>
 						<textarea rows="5"></textarea>
 					</div>
+					<button class="btn btn-primary"
 				</form>
 			</div>
 		</div>

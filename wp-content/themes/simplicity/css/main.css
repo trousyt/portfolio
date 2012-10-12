@@ -63,10 +63,10 @@ ul.collapse-list li {
 	padding: 10px 0 10px 20px;
 	height: 72px;
 	width: 280px;
-	background: url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+	/*background: url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;*/
 }
 .contact-button {
-	background-color: #ff3177;
+	background-color: #ff3177 url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
 }
 .about-button {
 	background-color: #f7ab6a;
@@ -137,10 +137,10 @@ ul.collapse-list li {
 
 #contact-me {
 	margin: 80px 0 80px 0;
-	padding: 50px 0 40px 0;
+	padding: 70px 0 60px 0;
 	height: 460px;
 	width: 830px;
-	background: url('../img/layout_main-contact-me-background.png');
+	background: url('../img/layout_main-contact-me-background.png') no-repeat;
 }
 
 #body-content #slider {

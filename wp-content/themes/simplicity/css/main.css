@@ -78,6 +78,7 @@ ul.collapse-list li {
 	padding: 10px 0 10px 20px;
 	height: 72px;
 	width: 100%;
+	background: url('../img/layout_main_body-nav-button-overlay.png') repeat-x left top;
 }
 
 
@@ -145,12 +146,12 @@ ul.collapse-list li {
 }
 #index-header-divider {
 	width: 100%;
-	height: 17px;
+	height: 100%;
 	background: url('../img/layout_main-header-border-btm.png') repeat-x;
 }
 
 #hero h1 {
-	align: center;
+	text-align: center;
 	line-height: 1.2em;
 }
 

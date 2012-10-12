@@ -37,4 +37,4 @@
     </div>
     <!-- /#topbar -->
     <!-- #content -->
-    <div id="content" class="span10 offset2 row">
+    <div id="content" class="span12 row">

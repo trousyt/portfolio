@@ -16,8 +16,9 @@
 		<!-- Logo Here -->
 		Logo Placeholder
 	</div>
+	<div id="index-header-divider" class="span12" style="clear:both; height: 100%;"></div>
 </div>
-<div id="index-header-divider" style="clear:both;"></div>
+
 <!-- /#header -->
 
 <!-- #hero -->
@@ -34,7 +35,7 @@
 <!-- #body-content -->
 <div id="body-content" class="row">
 	<div class="content-header row span10">
-		<div id="slider" class="span6">
+		<div id="slider" class="span4">
 			<!-- Slider code here -->Some placeholder text
 		</div>
 		<div id="body-nav" class="span4">

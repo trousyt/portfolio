@@ -138,7 +138,7 @@ ul.collapse-list li {
 	color: white;
 }
 #btmbar #seal {
-	font-size: .6em;
+	font-size: .8em;
 	font-style: italic;
 }
 
@@ -163,6 +163,13 @@ ul.collapse-list li {
 }
 #hero .btn {
 	width: 300px;
+}
+#hero .btn a {
+	color: white;
+	text-decoration: none;
+}
+#hero .btn a:hover {
+	text-decoration: none;
 }
 
 /* Content-Body Styling */

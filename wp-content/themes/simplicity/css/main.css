@@ -137,6 +137,10 @@ ul.collapse-list li {
 #btmbar a:hover {
 	color: white;
 }
+#btmbar #seal {
+	font-size: .6em;
+	font-style: italic;
+}
 
 /* Index Header */
 #index-header {

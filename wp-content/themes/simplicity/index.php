@@ -11,7 +11,7 @@
 <?php get_header(); ?>
 
 <!-- #header -->
-<div id="index-header" class="span10 offset 1row">
+<div id="index-header" class="span10 offset1 row">
 	<div>
 		<!-- Logo Here -->
 		Logo Placeholder
@@ -26,7 +26,7 @@
 	<div id="hero" class="row">
 		<h1><span class="large">Hi,</span> my name is <strong>Troy Parkinson</strong> and I'm a software engineer, graphic designer, and gosh-darnit, good guy that loves to create <em>practical</em> web apps, iOS apps, and other intuitive software that works using standards-driven design.</h1>
 		<div class="row centered-block">
-			<button class="btn btn-primary btn-large btn-hero centered-block">Contact me today to <strong>have a chat</strong>.</button>
+			<button class="btn btn-primary btn-large btn-hero centered-block"><a href="#contact-me">Contact me today to <strong>have a chat</strong>.</a></button>
 		</div>
 	</div>
 	<!-- /#hero -->

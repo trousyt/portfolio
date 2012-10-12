@@ -163,7 +163,7 @@ ul.collapse-list li {
 	margin-left: 100px;
 }
 
-#contact-form input[type='text'] {
+#contact-form input[type='text'], input[type='email'] {
 	width: 315px;
 }
 #contact-form textarea {

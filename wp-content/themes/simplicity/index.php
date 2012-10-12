@@ -61,7 +61,7 @@
 						<h3>What's on your mind?</h3>
 						<textarea rows="5"></textarea>
 					</div>
-					<button class="btn btn-primary"
+					<button class="btn btn-inverse">Say hello!</button>
 				</form>
 			</div>
 		</div>

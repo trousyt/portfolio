@@ -125,15 +125,13 @@ ul.collapse-list li {
 }
 
 /* Content-Body Styling */
-#content-body {
-	/*margin: 20px 0 20px 0;*/
-}
 .content-header {
 	margin: 20px 0 20px 0;
 }
 
 #contact-me {
-	margin: 20px 0 20px 0;
+	margin: 40px 0 20px 0;
+	background: url('../img/layout_main-contact-me-background.png');
 }
 
 #body-content #slider {

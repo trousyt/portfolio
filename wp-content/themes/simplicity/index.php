@@ -15,8 +15,8 @@
 	<div class="span10 offset1">
 		<!-- Logo Here -->
 		Logo Placeholder
+		<div id="index-header-divider"></div>
 	</div>
-	<div id="index-header-divider"></div>
 </div>
 
 <!-- /#header -->

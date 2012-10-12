@@ -66,7 +66,7 @@ ul.collapse-list li {
 	/*background: url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;*/
 }
 .contact-button {
-	background-color: #ff3177 url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+	background: #ff3177 url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
 }
 .about-button {
 	background-color: #f7ab6a;

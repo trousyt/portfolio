@@ -24,17 +24,22 @@
   
 </head>
 <body <?php body_class(); ?>>
-	<div id="container">
-		<!-- #topbar -->
-    <div id="topbar" class="row">
-      <div class="span12">
+	<!-- .wrapper -->
+  <div class="wrapper">
+
+    <!-- #topbar -->
+    <div id="topbar">
+      <div class="container">
         <ul class="unstyled collapse-list pull-right">
-          <li><a href="#">GitHub</a></li>
+          <li><a href="http://github.com/trousyt">GitHub</a></li>
           <li><a href="#">Follow me on Twitter</a></li>
           <li><a href="#">Follow me on LinkedIn</a></li>
         </ul>
       </div>
     </div>
     <!-- /#topbar -->
-    <!-- #content -->
-    <div id="content" class="span12 row">
+    
+    <!-- #content-wrapper -->
+    <div id="content-wrapper">
+      <div class="container">
+        <div class="span10">

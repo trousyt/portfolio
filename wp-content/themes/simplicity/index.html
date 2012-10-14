@@ -1,18 +1,50 @@
-<?php
- /*
-  * Theme: "Simplicity"
-  * Author: Troy Parkinson
-  * Created: 10/8/2012
-  * File: index.php
-  * Description: Handles default first-page structure.
-  */
-?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="<?php bloginfo('charset'); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="author" content="Troy Parkinson" />
+  <meta name="contact" content="troy@troypark.com" />
+  <meta name="copyright" content="Copyright (c)2012 Troy Parkinson. All rights reserved." />
+  <meta name="keywords" content="programming, computers, graphic design, ruby, rails, javascript, software, architecture, design" />
+  
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400" />
 
-<?php get_header(); ?>
+  <!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>-->
 
-<!-- =========================================
-   INDEX
-   ========================================= -->
+	<!-- CSS/JAVASCRIPT -->  
+</head>
+<body>
+  <!-- .wrapper -->
+	<div class="wrapper">
+
+    <!-- #topbar -->
+    <div id="topbar">
+      <div class="container">
+        <ul class="unstyled collapse-list pull-right">
+          <li><a href="http://github.com/trousyt">GitHub</a></li>
+          <li><a href="#">Follow me on Twitter</a></li>
+          <li><a href="#">Follow me on LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /#topbar -->
+    
+    <!-- #content-wrapper -->
+    <div id="content-wrapper">
+      <div class="container">
+        <div class="span10">
+  <!-- =========================================
+       INDEX
+       ========================================= -->
           <!-- section#content-wrapper -->
           <section id="index">
 
@@ -103,5 +135,45 @@
             <!-- /#body-wrapper -->
           </section>
           <!-- /section#content-->
+      
 
-<?php get_footer(); ?>
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+        </div>
+        <!-- /span10 offset1 -->
+      </div>
+      <!-- /#content-wrapper -->
+    </div>
+
+    <!-- .footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="span12">
+          <div id="leftm" class="span4 offset2">
+            <ul class="unstyled">
+              <li><a href="#" title="Contact">Contact</a></li>
+              <li><a href="#" title="About Me">About</a></li>
+              <li><a href="#" title="Work">Work</a></li>
+              <li><a href="#" title="Blog">Blog</a></li>
+            </ul>
+          </div>
+          <div id="rightm" class="span4 pull-right">
+            <h4>Contact Me</h4>
+            <div>email <a href="mailto:troy@troypark.com">troy@troypark.com</a></div>
+            <div>mobi <a href="tel:17022859127">+1 702 285-9127</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="seal" class="span12 centered-text">
+          <span class="icon-heart icon-white"></span> <em>Built with love all the love in the world by Troy Parkinson</em>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+  </div>
+  <!-- /.wrapper -->
+</body>
+</html>

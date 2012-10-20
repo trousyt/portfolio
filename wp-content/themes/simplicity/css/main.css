@@ -16,10 +16,14 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
    LINK STYLES
    ========================================================================== */
 a {
+	color: #44c783;
 	text-decoration: none;
+	
 }
 a:hover {
-
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dotted black;
 }
 a:visited {
 
@@ -32,13 +36,13 @@ a:visited {
 	font-weight: bold;
 }
 
-.large {
+.btn-large {
 	font-size: 2em;
 }
-.xlarge {
+.btn-xlarge {
 	font-size: 4em;
 }
-.xxlarge {
+.btn-xxlarge {
 	font-size: 8em;
 }
 
@@ -93,17 +97,17 @@ ul.collapse-list li {
 .btn-go {
 	color: #ffffff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #44c783;
+	background-color: #a3d4ba;
 	*background-color: #38a66d;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#44c783), to(#3eb577));
-	background-image: -webkit-linear-gradient(top, #44c783, #3eb577);
-	background-image: -o-linear-gradient(top, #44c783, #3eb577);
-	background-image: linear-gradient(to bottom, #44c783, #3eb577);
-	background-image: -moz-linear-gradient(top, #44c783, #3eb577);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a3d4ba), to(#3eb577));
+	background-image: -webkit-linear-gradient(top, #a3d4ba, #3eb577);
+	background-image: -o-linear-gradient(top, #a3d4ba, #3eb577);
+	background-image: linear-gradient(to bottom, #a3d4ba, #3eb577);
+	background-image: -moz-linear-gradient(top, #a3d4ba, #3eb577);
 	background-repeat: repeat-x;
 	border-color: #3eb577 #3eb577 #38a66d;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#44c783', endColorstr='#3eb577', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#a3d4ba', endColorstr='#3eb577', GradientType=0);
 	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 .btn-go:hover,
@@ -132,6 +136,8 @@ ul.collapse-list li {
 }
 .nav-button a:hover {
 	text-decoration: none;
+	border: none;
+	color: #000;
 }
 .nav-button.contact {
 	background: #ff3177 url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
@@ -224,7 +230,7 @@ ul.collapse-list li {
  	position: relative;
  	top: -50px;
  	margin-bottom: -40px;
-	margin-left: 100px;
+	margin-left: 200px;
 	height: 95px;
 	width: 127px;
 	background: url('../img/layout_main-nav-arrow.png') no-repeat left top;
@@ -240,8 +246,8 @@ ul.collapse-list li {
 	font-size: 2em;
 }
 #index #hero .btn {
-	width: 100%;
-	max-width: 300px;
+	width: 93%;
+	max-width: 500px;
 }
 #index #hero .btn a {
 	color: white;
@@ -283,7 +289,7 @@ ul.collapse-list li {
 	width: 60%
 }
 #index #contact-me textarea {
-	width: 60%;
+	width: 90%;
 }
 #index #contact-me .submit {
 	width: 63%;
@@ -291,18 +297,18 @@ ul.collapse-list li {
 
 
 /* MQ: SCREEN SIZE: 1140PX */
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 768px) and (max-width: 979px) {
 	#index #contact-me {
 		padding-left: 60px;
 	}
 	#index #contact-me input[type='text'], input[type='email'] {
-		width: 60%
+		width: 90%
 	}
 	#index #contact-me textarea {
-		width: 60%;
+		width: 90%;
 	}
 	#index #contact-me .submit {
-		width: 63%;
+		width: 93%;
 	}
 }
 

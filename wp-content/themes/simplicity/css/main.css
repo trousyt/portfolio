@@ -5,11 +5,26 @@ body {
 	background: url('../img/layout_main-background.png') repeat;
 }
 
+h1 {
+	font-size: 4em;
+}
+h3 {
+	font-size: 1.2em;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Archivo Narrow', sans-serif;
 }
 h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 	display: inline-block;
+}
+.em {
+	font-style: italic;
+	font-family: Scada;
+}
+
+#body-wrapper h1 {
+	font-family: Scada;
+	font-size: 4em;
 }
 
 /* ==========================================================================
@@ -46,8 +61,11 @@ a:visited {
 	font-size: 8em;
 }
 
-.centered-text {
+.center-align {
 	text-align: center;
+}
+.right-align {
+	text-align: right;
 }
 
 .centered-block {
@@ -95,7 +113,7 @@ ul.collapse-list li {
    Button Styling
    ========================================================================== */
 .btn-go {
-	color: #ffffff;
+	color: #fff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color: #a3d4ba;
 	*background-color: #38a66d;
@@ -115,9 +133,35 @@ ul.collapse-list li {
 .btn-go.active,
 .btn-go.disabled,
 .btn-go[disabled] {
-  color: #ffffff;
+  color: #000;
   background-color: #3eb577;
   *background-color: #3eb577;
+}
+
+/* NAV */
+.nav a {
+	color: black;
+}
+.nav a:hover {
+	border-bottom: none;
+}
+.nav .nav-item {
+	font-family: Scada;
+	font-size: 1.4em;
+	vertical-align: middle;
+}
+.nav .nav-item:hover {
+	background-color: #e3e3e3;
+}
+.nav .nav-item .bl {
+	display: inline-block;
+	width: 12px;
+	height: 40px;
+	margin-right: 10px;
+}
+.nav .nav-item.active .bl {
+	height: 60px;
+	font-weight: bold;
 }
 
 /* NAV BUTTONS */
@@ -150,6 +194,31 @@ ul.collapse-list li {
 }
 .nav-button.blog {
 	background: #7dc4ed url('../img/layout_main-body-nav-button-overlay.png') repeat-x left top;
+}
+
+.contact-styling {
+	color: #ee145b;
+}
+.contact-back {
+	background-color: #ee145b;
+}
+.about-styling {
+	color: #f5aa5b;
+}
+.about-back {
+	background-color: #f5aa5b;
+}
+.work-styling {
+	color: #44c783
+}
+.work-back {
+	background-color: #44c783;
+}
+.blog-styling {
+	color: #7da7d9;
+}
+.blog-back {
+	background-color: #7da7d9;
 }
 
 /* ==========================================================================
@@ -185,6 +254,7 @@ ul.collapse-list li {
 
 /* FOOTER */
 .footer {
+	margin-top: 80px;
 	padding-top: 20px;
 	height: 140px;
 	background-color: #585858;
@@ -205,6 +275,123 @@ ul.collapse-list li {
 	font-style: italic;
 }
 
+/* ==========================================================================
+   WORK
+   ========================================================================== */
+#work header .divider {
+	background-color: #44c783;
+}
+#work .tagline {
+	color: #44c783;
+}
+#work #body-wrapper h1 {
+	color: #44c783;
+}
+#blog a {
+	color: #44c783;
+}
+
+#work #portfolio {
+	
+}
+
+#work .portfolio-item {
+	float: left;
+	height: 248px;
+	width: 303px;
+	margin: 0 20px 40px 0;
+}
+
+#work .portfolio-item .img {
+	width: 100%;
+	height: 220px;
+	margin-bottom: 10px;
+	background-color: #e3e3e3;
+}
+#work .portfolio-item aside {
+	font-size: 2em;
+	color: gray;
+}
+
+/* ==========================================================================
+   BLOG
+   ========================================================================== */
+#blog h1, #blog h2, #blog h3, #blog h4 {
+	color: #7da7d9;
+}
+#blog a {
+	color: #7da7d9;
+}
+#blog header .divider {
+	background-color: #7da7d9;
+}
+#blog .tagline {
+	color: #7da7d9;
+}
+
+#blog #blog-roll {
+	
+}
+
+#blog .blog-post {
+	margin: 0 20px 40px 0;
+}
+#blog .blog-post h4 {
+	color: #000;
+}
+#blog .blog-post .img {
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin: 10px 10px 10px;
+	background-color: #e3e3e3;
+}
+#blog .blog-post aside {
+	color: gray;
+}
+
+#blog .sidebar {
+	text-align: right;
+}
+#blog .sidebar ul {
+	list-style: none;
+}
+#blog .sidebar ul li {
+	
+}
+
+
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
+#about header .divider {
+	background-color: #f5aa5b;
+}
+#about a {
+	color: #f5aa5b;
+}
+#about .tagline {
+	color: #f5aa5b;
+}
+#about #body-wrapper h1 {
+	color: #f5aa5b;
+}
+
+/* ==========================================================================
+   CONTACT
+   ========================================================================== */
+#contact header .divider {
+	background-color: #ee145b;
+}
+#contact a {
+	color: #ee145b;
+}
+#contact .tagline {
+	color: #ee145b;
+}
+#contact #body-wrapper h1 {
+	color: #ee145b;
+}
 
 /* ==========================================================================
    INDEX
@@ -213,15 +400,39 @@ ul.collapse-list li {
 #index header, header .logo {
 	height: 80px;
 }
-#index header .divider {
+.divider1 {
 	width: 100%;
 	height: 17px;
 	background: url('../img/layout_main-header-border-btm.png') repeat-x left bottom;
 }
 
+header .divider {
+	height: 20px;
+	/*-webkit-box-shadow: 0px 6px 30px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 6px 30px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 6px 30px rgba(50, 50, 50, 0.75);*/
+}
+
+
+
+header .nav ul {
+	list-style: none;
+}
+
+header .nav li {
+	display: inline-block;
+	float: left;
+	height: 50px;
+	margin-left: 40px;
+}
+
 /* BODY CONTENT */
-#index #body-content #slider {
+#index #slides {
 	background-color: #f2f2f2;
+	height: 347px;
+}
+
+#index #slides .slides_container div {
 	height: 347px;
 }
 
@@ -238,7 +449,7 @@ ul.collapse-list li {
 
 /* HERO */
 #index #hero {
-	margin-bottom: 20px;
+	margin: 40px 0;
 }
 #index #hero h1 {
 	line-height: 1.2em;
@@ -263,7 +474,7 @@ ul.collapse-list li {
 	font-size: 3em;
 }
 #index #hero .title {
-	margin-left: 10px;
+	margin: 0 0 30px 10px;
 }
 
 /* CONTACT FORM */
@@ -282,17 +493,17 @@ ul.collapse-list li {
 }
 
 #index #contact-me h2, #index #contact-me h3 {
-	text-shadow: 1px 1px black;
+	text-shadow: 2px 2px black;
 	color: white;
 }
 #index #contact-me input[type='text'], input[type='email'] {
 	width: 60%
 }
 #index #contact-me textarea {
-	width: 90%;
+	width: 70%;
 }
 #index #contact-me .submit {
-	width: 63%;
+	width: 70%;
 }
 
 

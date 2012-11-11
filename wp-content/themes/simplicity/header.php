@@ -19,12 +19,12 @@
   <meta name="keywords" content="programming, computers, graphic design, ruby, rails, javascript, software, architecture, design" />
 
 	<!-- CSS/JAVASCRIPT -->
+  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_head(); ?>
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   
 </head>
 <body <?php body_class(); ?>>
-	<!-- .wrapper -->
+  <!-- .wrapper -->
   <div class="wrapper">
 
     <!-- #topbar -->
@@ -32,8 +32,8 @@
       <div class="container">
         <ul class="unstyled collapse-list pull-right">
           <li><a href="http://github.com/trousyt">GitHub</a></li>
-          <li><a href="#">Follow me on Twitter</a></li>
-          <li><a href="#">Follow me on LinkedIn</a></li>
+          <li><a href="http://twitter.com/trousyt">Follow me on Twitter</a></li>
+          <li><a href="http://www.linkedin.com/pub/troy-parkinson/38/592/720">Follow me on LinkedIn</a></li>
         </ul>
       </div>
     </div>

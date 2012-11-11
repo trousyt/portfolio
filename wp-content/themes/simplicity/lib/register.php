@@ -1,36 +1,14 @@
 <?php
- /*
-  * Theme: "Simplicity"
-  * Author: Troy Parkinson
-  * Created: 9/28/2012
-  * File: register.php
-  * Description: Register this custom theme and define other helper functions.
-  */
-
-/* Add standard support to WP */
-add_theme_support('post-thumbnails');
-
+/*
+* Theme: "Simplicity"
+* Author: Troy Parkinson
+* Created: 11/10/2012
+* File: register.php
+* Description: Register this custom theme, post types, taxonomies, and meta fields.
+*/
 
 /*********************************
- * SIMPLICITY_SETUP
- * Setup with custom theme routines.
- ********************************/
-add_action('after_setup_theme', 'simp_setup');
-if (! function_exists('simp_setup')) :
-  function simp_setup() {
-    // We are providing our own filter for excerpt_length (or using the unfiltered value)
-    // remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );
-    
-    // For language support
-    //load_theme_textdomain('simplicity', get_template_directory() . '/languages');
-    
-    // Add support for post formats
-    //add_theme_support('post-formats', array('aside', 'link', 'gallery', 'status', 'quote', 'image') );
-  }
-endif;  // /simplicity_setup
-
-/*********************************
- * REGISTER_CUSTOM_POST_TYPES
+ * REGISTER CUSTOM POST TYPES
  * Register custom post types and add any applicable
  * "taxonomies"/categories.
  ********************************/
@@ -68,11 +46,14 @@ function simp_register_post_types() {
   );
 
   register_post_type('portfolio', $args);
-
-  
 }
 
-add_action('init', 'simp_register_taxonomies');
+
+/*********************************
+ * REGISTER CUSTOM TAXONOMIES (CATEGORIES)
+ * Register custom taxonomies.
+ ********************************/
+add_action('init', 'simp_register_taxonomies', 0);
 function simp_register_taxonomies() {
   $label = array(
     'name'          => __('Project Categories'),
@@ -96,28 +77,35 @@ function simp_register_taxonomies() {
 
   // Register the category.
   register_taxonomy(
-    'cats', 
-    array('portfolio'), 
+    'project_category', 
+    'portfolio', 
     $args
   );
 }
 
 /*********************************
- * INIT_CUSTOM_ADMIN
+ * REGISTER CUSTOM META FIELDS
  * Register custom admin CP UI functionality.
  ********************************/
 add_action('add_meta_boxes', 'simp_init_custom_admin');
 function simp_init_custom_admin() {
-  add_meta_box('technologies_used-meta', 'Technologies Used', 'technologies_used', 'portfolio', 'side', 'low');
+  add_meta_box(
+    'project_technologies_used', 
+    __('Technologies Used'), 
+    'project_technologies_used_content', 
+    'portfolio', 
+    'side', 
+    'high');
 }
 
-function technologies_used($post) {
+function project_technologies_used_content($post) {
   $custom = get_post_custom($post->ID);
-  $technologies_used = $custom['technologies_used'][0];
+  $technologies_used = $custom['project_technologies_used'][0];
 
   // Print the HTML output
-  echo '<label for="technologies_used">' . __("What technologies were used for this project?") . '</label>';
-  echo '<input type="text" id="technologies_used" name="technologies_used" value="' . $technologies_used . '" />';
+  wp_nonce_field(plugin_basename(__FILE__), 'project_technologies_used_content_nonce')
+  echo '<label for="project_technologies_used">' . __("What technologies were used for this project?") . '</label>';
+  echo '<input type="text" id="project_technologies_used" name="project_technologies_used" value="' . $technologies_used . '" />';
 }
 
 /* Make sure to save the custom post data */
@@ -129,30 +117,5 @@ function simp_save_post_meta($post_id) {
     return;
 
   // Update the post meta data.
-  update_post_meta($post_id, 'technologies_used', $_POST['technologies_used']);
+  update_post_meta($post_id, 'project_technologies_used', $_POST['project_technologies_used']);
 }
-
-/*********************************
- * ENQUEUE SCRIPTS/STYLES
- * Enqueue javascript files and styles to be used throughout the site.
- ********************************/
-function simp_enqueue_scripts() {
-	if (!is_admin()) {
-		/* Add Javascript */
-		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2', true);
-	  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true);
-	  wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/vendor/html5-3.6-respond-1.1.0.min.js', false, '3.6', true);
-	  wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min', array('jquery'), '1.0', true);
-	  wp_enqueue_script('plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '1.0', true);
-		wp_enqueue_script('slides', get_template_directory_uri() . '/js/vendor/slides.jquery.min.js', array('jquery'), '1.0', true);
-	
-		/* Add styles */
-    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', false, '2.0', 'all');
-    wp_enqueue_style('bootstrap-responsive', get_stylesheet_directory_uri() . '/css/bootstrap-responsive.min.css', false, '2.0', 'all');
-		wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css', false, '1.0', 'all');
-		wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
-	}
-}
-add_action('wp_enqueue_scripts', 'simp_enqueue_scripts');
-
-?>

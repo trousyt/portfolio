@@ -10,9 +10,9 @@
 
 <?php get_header(); ?>
 
-<!-- =========================================
-   INDEX
-   ========================================= -->
+  <!-- =========================================
+       INDEX
+       ========================================= -->
           <!-- section#content-wrapper -->
           <section id="index">
 
@@ -23,7 +23,7 @@
                   <div class="span3">Placeholder</div>
                 </div>
               </div>
-              <div class="divider"></div>
+              <div class="divider1"></div>
             </header>
             
             <!-- #body-wrapper -->
@@ -35,13 +35,11 @@
                     <h1 class="circular">Hello.</h1>
                   </div>
                   <div class="span8">
-                    <h1 class="title">My name is <strong>Troy Parkinson</strong> and I'm a software developer, graphic designer, and gosh-darnit, good guy that loves to create practical web apps, iOS apps, and other intuitive software that works using proven, standards-driven design.
+                    <h1 class="title">My name is <a href="/about"><strong>Troy Parkinson</strong></a> and I'm a software developer, graphic designer, and create practical web apps, iOS apps, and other intuitive software that works using proven, standards-driven design.
                     </h1>
-                </div>
-                </div>
-                <div class="row">
-                  <div class="centered-text">
-                    <a href="#contact-me" class="btn btn-go btn-large">Contact me today to <strong>have a chat</strong>.</a>
+                    <div >
+                        <a href="#contact-me" class="btn btn-go btn-large">Contact me today to <strong>have a chat</strong>.</a>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -52,19 +50,31 @@
                 <!-- #body-content -->
                 <div id="body-content">
                   <div class="row">
-
-                    <div id="slider" class="span6">
-                      Placeholder
+                    <div class="span6">
+                      <div id="slides">
+                        <div class="slides_container">
+                          <div>
+                            <p>Test 1</p>
+                          </div>
+                          <div>
+                            <p>Test 2</p>
+                          </div>
+                          <div>
+                            <p>Test 3</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                    <div id="body-nav" class="span4">
-                      <div class="arrow"></div>
-                      <ul class="unstyled">
-                        <li class="nav-button contact"><a href="#" title="Contact">Contact</a></li>
-                        <li class="nav-button about"><a href="#" title="About Me">About</a></li>
-                        <li class="nav-button work"><a href="#" title="Work">Work</a></li>
-                        <li class="nav-button blog"><a href="#" title="Blog">Blog</a></li>
-                      </ul>
+                    <div class="span4">
+                      <div id="body-nav">
+                        <div class="arrow"></div>
+                        <ul class="unstyled">
+                          <li class="nav-button contact"><a href="contact.html" title="Contact">Contact</a></li>
+                          <li class="nav-button about"><a href="about.html" title="About">About</a></li>
+                          <li class="nav-button work"><a href="work.html" title="Work">Work</a></li>
+                          <li class="nav-button blog"><a href="blog.html" title="Blog">Blog</a></li>
+                        </ul>
+                      </div>
                     </div>
 
                   </div>
@@ -77,21 +87,23 @@
               <div class="row">
                 <!-- #contact-me -->
                 <div id="contact-me" class="rotate-neg5">
-                  <div id="contact-me-inner" class="span6 offset3">
-                    <form id="contact-form">
-                      <div class="info row">
-                        <h2>Let's chat about anything...</h2>
-                        <input id="name" type="text" placeholder="Name" />
-                        <input id="email" type="email" placeholder="Email" />
-                      </div>
-                      <div class="message row">
-                        <h3>What's on your mind?</h3>
-                        <textarea rows="5"></textarea>
-                      </div>
-                      <div class="row">
-                         <button class="submit btn btn-inverse btn-large">Say hello!</button>
-                      </div>
-                    </form>
+                  <div class="span6 offset3">
+                    <div id="contact-me-inner">
+                      <form id="contact-form">
+                        <div class="info row">
+                          <h2>Who are you?</h2>
+                          <input id="name" type="text" placeholder="Name" />
+                          <input id="email" type="email" placeholder="Email" />
+                        </div>
+                        <div class="message row">
+                          <h2>What's on your mind?</h2>
+                          <textarea rows="5"></textarea>
+                        </div>
+                        <div class="row">
+                           <button class="submit btn btn-inverse btn-large">Say hello!</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
 
                 </div>
@@ -103,5 +115,53 @@
             <!-- /#body-wrapper -->
           </section>
           <!-- /section#content-->
+      
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+        </div>
+        <!-- /span10 offset1 -->
+      </div>
+      <!-- /#content-wrapper -->
+    </div>
+
+    <!-- .footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div id="leftm" class="span2 offset1">
+              <ul class="unstyled">
+                <li><a href="#" title="Contact">Contact</a></li>
+                <li><a href="#" title="About Me">About</a></li>
+                <li><a href="#" title="Work">Work</a></li>
+                <li><a href="#" title="Blog">Blog</a></li>
+              </ul>
+            </div>
+            <div id="rightm" class="span2 offset4">
+              <h4>Contact Me</h4>
+              <div>email <a href="mailto:troy@troypark.com">troy@troypark.com</a></div>
+              <div>mobi <a href="tel:17022859127">+1 702 285-9127</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="seal" class="span10 center-align">
+            <em>Made by Troy Parkinson</em>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+  </div>
+  <!-- /.wrapper -->
+  
+  <script type="text/javascript">
+    $(function() {
+      $('#slides').slides();
+    });
+  </script>
 
 <?php get_footer(); ?>

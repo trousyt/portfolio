@@ -38,46 +38,67 @@ add_action('init', 'simp_register_post_types');
 function simp_register_post_types() {
   /* These labels show up in the Admin CP */
   $labels = array(
-    'name' => __('My Portfolio'),
+    'name'          => __('Portfolio'),
     'singular_name' => __('Project'),
-    'add_new' => __('Add New'),
-    'add_new_item' => __('Add Project'),
-    'edit_item' => __('Edit Project'),
-    'new_item' => __('New Project'),
-    'view_item' => __('View Project'),
-    'search_items' => __('Search Portfolio'),
-    'not_found' => __('Nothing found'),
+    'add_new'       => __('Add New'),
+    'add_new_item'  => __('Add Project'),
+    'edit_item'     => __('Edit Project'),
+    'new_item'      => __('New Project'),
+    'view_item'     => __('View Project'),
+    'search_items'  => __('Search Projects'),
+    'not_found'     => __('Nothing found'),
     'not_found_in_trash' => __('Nothing found in trash'),
     'parent_item_colon' => ''
   );
 
   $args = array(
-    'labels' => $labels,
-    'description' => 'Registers our custom Project/Portfolio post type',
-    'public' => true,
+    'labels'        => $labels,
+    'description'   => 'Registers our custom Project/Portfolio post type',
+    'public'        => true,
     'publicly_queryable' => true,
-    'show_ui' => true,
-    'show_in_menu' => true,
+    'show_ui'       => true,
+    'show_in_menu'  => true,
     'show_in_admin_bar' => true,
-    'query_var' => true,
-    'rewrite' => array('slug' => 'portfolio'),
+    'query_var'     => true,
+    'rewrite'       => array('slug' => 'portfolio'),
     'capability_type' => 'post',
-    'hierarchical' => false,
+    'hierarchical'  => false,
     'menu_position' => null,
-    'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'comments')
+    'supports'      => array('title', 'editor', 'thumbnail', 'excerpt', 'comments')
   );
 
   register_post_type('portfolio', $args);
 
+  
+}
+
+add_action('init', 'simp_register_taxonomies');
+function simp_register_taxonomies() {
+  $label = array(
+    'name'          => __('Project Categories'),
+    'singular_name' => __('Project Category'),
+    'search_items'  => __('Search Project Categories'),
+    'all_items'     => __('All Project Categories'),
+    'parent_item'   => __('Parent Project Category'),
+    'parent_item_colon' => __('Parent Project Category:'),
+    'edit_item'     => __('Edit Project Category'),
+    'update_item'   => __('Update Project Cateogory'),
+    'add_new_item'  => __('Add New Project Category'),
+    'new_item_name' => __('New Project Category'),
+    'menu_name'     => __('Project Categories')
+  );
+  $args = array(
+    'hierarchical'  => true, 
+    'labels'        => $labels,
+    'singular_label' => 'Category', 
+    'rewrite'       => true
+  );
+
+  // Register the category.
   register_taxonomy(
     'cats', 
     array('portfolio'), 
-    array(
-      'hierarchical' => true, 
-      'label' => 'Categories', 
-      'singular_label' => 'Category', 
-      'rewrite' => true
-    )
+    $args
   );
 }
 

@@ -35,7 +35,7 @@
                     <h1 class="circular">Hello.</h1>
                   </div>
                   <div class="span8">
-                    <h1 class="title">My name is <a href="/about"><strong>Troy Parkinson</strong></a> and I'm a software developer, graphic designer, and create practical web apps, iOS apps, and other intuitive software that works using proven, standards-driven design.
+                    <h1 class="title">My name is <a href="/about"><strong>Troy Parkinson</strong></a> and I'm a software developer and graphic designer. I create practical web apps, iOS apps, and other intuitive software that makes life easier by using proven, standards-driven design.
                     </h1>
                     <div >
                         <a href="#contact-me" class="btn btn-go btn-large">Contact me today to <strong>have a chat</strong>.</a>
@@ -64,15 +64,20 @@
                           </div>
                         </div>
                       </div>
+                      <script type="text/javascript">
+                        $(function() {
+                          $('#slides').slides();
+                        });
+                      </script>
                     </div>
                     <div class="span4">
                       <div id="body-nav">
                         <div class="arrow"></div>
                         <ul class="unstyled">
-                          <li class="nav-button contact"><a href="contact.html" title="Contact">Contact</a></li>
-                          <li class="nav-button about"><a href="about.html" title="About">About</a></li>
-                          <li class="nav-button work"><a href="work.html" title="Work">Work</a></li>
-                          <li class="nav-button blog"><a href="blog.html" title="Blog">Blog</a></li>
+                          <li class="nav-button contact"><a href="/contact" title="Contact">Contact</a></li>
+                          <li class="nav-button about"><a href="/about" title="About">About</a></li>
+                          <li class="nav-button work"><a href="/portfolio" title="Portfolio">Portfolio</a></li>
+                          <li class="nav-button blog"><a href="/blog" title="Blog">Blog</a></li>
                         </ul>
                       </div>
                     </div>

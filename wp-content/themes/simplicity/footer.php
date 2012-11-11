@@ -14,10 +14,10 @@
           <div class="span12">
             <div id="leftm" class="span2 offset1">
               <ul class="unstyled">
-                <li><a href="#" title="Contact">Contact</a></li>
-                <li><a href="#" title="About Me">About</a></li>
-                <li><a href="#" title="Work">Work</a></li>
-                <li><a href="#" title="Blog">Blog</a></li>
+                <li><a href="/contact" title="Contact">Contact</a></li>
+                <li><a href="/about" title="About Me">About</a></li>
+                <li><a href="/portfolio" title="Portfolio">Portfolio</a></li>
+                <li><a href="/blog" title="Blog">Blog</a></li>
               </ul>
             </div>
             <div id="rightm" class="span2 offset4">
@@ -39,10 +39,5 @@
   </div>
   <!-- /.wrapper -->
   
-  <script type="text/javascript">
-    $(function() {
-      $('#slides').slides();
-    });
-  </script>
 </body>
 </html>

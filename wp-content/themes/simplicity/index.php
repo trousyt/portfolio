@@ -8,7 +8,7 @@
   */
 ?>
 
-<?php /*get_header();*/ ?>
+<?php get_header(); ?>
 
   <!-- =========================================
        CONTENT
@@ -116,4 +116,4 @@
           </section>
           <!-- /section#content-->
       
-<?php /*get_footer();*/ ?>
+<?php get_footer(); ?>

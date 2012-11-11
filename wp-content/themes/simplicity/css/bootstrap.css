@@ -3075,7 +3075,7 @@ button.close {
 
 .btn:first-child {
   *margin-left: 0;
-}
+};
 
 .btn:hover {
   color: #333333;

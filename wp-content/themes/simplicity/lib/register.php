@@ -68,6 +68,7 @@ function simp_register_taxonomies() {
     'new_item_name' => __('New Project Category'),
     'menu_name'     => __('Project Categories')
   );
+
   $args = array(
     'hierarchical'  => true, 
     'labels'        => $labels,
@@ -76,11 +77,7 @@ function simp_register_taxonomies() {
   );
 
   // Register the category.
-  register_taxonomy(
-    'project_category', 
-    'portfolio', 
-    $args
-  );
+  register_taxonomy('project_category', 'portfolio', $args);
 }
 
 /*********************************

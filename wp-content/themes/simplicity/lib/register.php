@@ -53,7 +53,7 @@ function simp_register_post_types() {
  * REGISTER CUSTOM TAXONOMIES (CATEGORIES)
  * Register custom taxonomies.
  ********************************/
-/*add_action('init', 'simp_register_taxonomies', 0);
+add_action('init', 'simp_register_taxonomies', 0);
 function simp_register_taxonomies() {
   $label = array(
     'name'          => __('Project Categories'),
@@ -78,7 +78,7 @@ function simp_register_taxonomies() {
 
   // Register the category.
   register_taxonomy('project_category', 'portfolio', $args);
-}*/
+}
 
 /*********************************
  * REGISTER CUSTOM META FIELDS

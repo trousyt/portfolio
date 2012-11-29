@@ -53,7 +53,7 @@ function simp_register_post_types() {
  * REGISTER CUSTOM TAXONOMIES (CATEGORIES)
  * Register custom taxonomies.
  ********************************/
-add_action('init', 'simp_register_taxonomies', 0);
+/*add_action('init', 'simp_register_taxonomies', 0);
 function simp_register_taxonomies() {
   $label = array(
     'name'          => __('Project Categories'),
@@ -78,13 +78,13 @@ function simp_register_taxonomies() {
 
   // Register the category.
   register_taxonomy('project_category', 'portfolio', $args);
-}
+}*/
 
 /*********************************
  * REGISTER CUSTOM META FIELDS
  * Register custom admin CP UI functionality.
  ********************************/
-add_action('add_meta_boxes', 'simp_init_custom_admin');
+/*add_action('add_meta_boxes', 'simp_init_custom_admin');
 function simp_init_custom_admin() {
   add_meta_box(
     'project_technologies_used', 
@@ -103,10 +103,10 @@ function project_technologies_used_content($post) {
   wp_nonce_field(plugin_basename(__FILE__), 'project_technologies_used_content_nonce')
   echo '<label for="project_technologies_used">' . __("What technologies were used for this project?") . '</label>';
   echo '<input type="text" id="project_technologies_used" name="project_technologies_used" value="' . $technologies_used . '" />';
-}
+}*/
 
 /* Make sure to save the custom post data */
-add_action('save_post', 'simp_save_post_meta');
+/*add_action('save_post', 'simp_save_post_meta');
 function simp_save_post_meta($post_id) {
 
   // If auto-save, exit function.
@@ -115,4 +115,4 @@ function simp_save_post_meta($post_id) {
 
   // Update the post meta data.
   update_post_meta($post_id, 'project_technologies_used', $_POST['project_technologies_used']);
-}
+}*/

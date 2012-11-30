@@ -52,12 +52,14 @@
 
               	<?php 
               	// Start the page loop.
-              	while ( have_posts() ) : the_post(); ?>
+              	while ( have_posts() ) : the_post();
+              		$custom_fields = get_post_custom();
+              	?>
 
                 <header>
                   <div class="row">
                     <div class="span7">
-                      <h3 class="tagline em"><?php the_excerpt() ?></h3>
+                      <h3 class="tagline em"><?php echo $custom_fields['tagline'] ?></h3>
                     </div>
                     <div class="span3 right-align">
                       <h1>Work</h1>
@@ -70,10 +72,7 @@
                 
                 <!-- .content -->
                 <div class="content buffer">
-                  <?php
-                  	$content = apply_filters('the_content', post_content);
-                  	echo $content;
-                  ?>
+                  <?php the_content() ?>
 
                   <!-- #portfolio -->
                   <div id="portfolio" class="buffer2x clearfix">
@@ -94,7 +93,7 @@
 										
 										<?php endwhile; ?>
 										<!-- /loop -->
-										
+
                   </div>
                   <!-- /#portfolio -->
                   

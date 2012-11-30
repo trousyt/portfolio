@@ -66,13 +66,15 @@ ini_set('display_errors', True);
                 <header>
                   <div class="row">
                     <div class="span7">
-                      <h3 class="tagline em">
-                        <?php 
-                          $tagline_meta = get_post_meta( get_the_ID(), 'tagline', true );
-                          if ( $tagline_meta != '' ) {
-                            echo $tagline_meta;
-                          }
-                        ?>
+                      <h3>
+                          <small class="tagline">
+                          <?php 
+                            $tagline_meta = get_post_meta( get_the_ID(), 'tagline', true );
+                            if ( $tagline_meta != '' ) {
+                              echo $tagline_meta;
+                            }
+                          ?>
+                          </small>
                       </h3>
                     </div>
                     <div class="span3 right-align">

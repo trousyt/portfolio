@@ -62,7 +62,9 @@ ini_set('display_errors', True);
                 <header>
                   <div class="row">
                     <div class="span7">
-                      <h3 class="tagline em">Portfolio Schwartfolio.</h3>
+                      <h3>
+                        <small class="tagline">Portfolio Schwartfolio.</small>
+                      </h3>
                     </div>
                     <div class="span3 right-align">
                       <h1>Work</h1>

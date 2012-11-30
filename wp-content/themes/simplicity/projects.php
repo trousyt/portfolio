@@ -8,6 +8,13 @@
   */
 ?>
 
+<?php
+ 
+error_reporting(E_ALL);
+ini_set('display_errors', True);
+
+?>
+
 
 <?php get_template_part('templates/projects', 'header') ?>
 

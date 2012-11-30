@@ -88,7 +88,7 @@ ini_set('display_errors', True);
 										?>
 										
 										<div class="portfolio-item">
-                      <div class="img" alt="<?php echo get_the_content() ?>"><?php the_post_thumbnail('project-thumb_size') ?></div>
+                      <div class="img" alt="<?php echo get_the_content() ?>"><?php the_post_thumbnail('project-thumb-size') ?></div>
                       <aside>
                       	<div><a href="<?php the_permalink() ?>"><?php the_title() ?></a> / <?php the_category(', ') ?></div>
                       	<div><small>Tags</small></div>

@@ -46,7 +46,7 @@
               <!-- /#hero -->
             
               <!-- .row -->
-              <div class="row">
+              <!--<div class="row">-->
                 <!-- #body-content -->
                 <div id="body-content">
                   <div class="row">
@@ -80,16 +80,13 @@
                           <li class="nav-button blog"><a href="/blog" title="Blog">Blog</a></li>
                         </ul>
                       </div>
-                    </div>
-
+                    </div>                   
                   </div>
                 </div>
-                <!-- /#body-content -->
-              </div>
               <!-- /row -->
 
               <!-- row -->
-              <div class="row">
+              <!--<div class="row">-->
                 <!-- #contact-me -->
                 <div id="contact-me" class="rotate-neg5">
                   <div class="span6 offset3">
@@ -113,7 +110,7 @@
 
                 </div>
                 <!-- /#contact-me -->
-              </div>
+              <!--</div>-->
               <!-- /row -->
 
             </div>

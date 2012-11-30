@@ -49,11 +49,15 @@
             <div id="body-wrapper" class="buffer2x">
               <!-- section#body -->
               <section id="body">
-                
+
+              	<?php 
+              	// Start the page loop.
+              	while ( have_posts() ) : the_post(); ?>
+
                 <header>
                   <div class="row">
                     <div class="span7">
-                      <h3 class="tagline em">Tagline</h3>
+                      <h3 class="tagline em"><?php the_excerpt() ?></h3>
                     </div>
                     <div class="span3 right-align">
                       <h1>Work</h1>
@@ -66,11 +70,8 @@
                 
                 <!-- .content -->
                 <div class="content buffer">
-                  <?php 
-                  	// Display the page's content.
-                  	$id = 29;
-                  	$post = get_page($id);
-                  	$content = apply_filters('the_content', $post->post_content);
+                  <?php
+                  	$content = apply_filters('the_content', post_content);
                   	echo $content;
                   ?>
 
@@ -93,12 +94,15 @@
 										
 										<?php endwhile; ?>
 										<!-- /loop -->
+										
                   </div>
                   <!-- /#portfolio -->
                   
                 </div>
                 <!-- /.content -->
                 
+                <?php endwhile; ?>
+
               </section>
               <!-- /section#body -->
             </div>

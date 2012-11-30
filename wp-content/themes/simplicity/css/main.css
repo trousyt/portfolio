@@ -11,6 +11,9 @@ h1 {
 h3 {
 	font-size: 1.2em;
 }
+h3.tagline {
+
+}
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Archivo Narrow', sans-serif;
 }
@@ -291,18 +294,11 @@ ul.collapse-list li {
 #work header .divider {
 	background-color: #44c783;
 }
-#work .tagline {
-	color: #44c783;
-}
 #work h1, #work h2, #work h3 {
 	color: #44c783;
 }
 #work a {
 	color: #44c783;
-}
-
-#work #portfolio {
-	
 }
 
 #work #project-content .alignright {

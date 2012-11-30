@@ -27,11 +27,6 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div id="seal" class="span10 center-align">
-            <em>Made by Troy Parkinson</em>
-          </div>
-        </div>
       </div>
     </footer>
     <!-- /.footer -->

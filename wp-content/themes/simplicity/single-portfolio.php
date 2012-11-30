@@ -90,7 +90,7 @@ ini_set('display_errors', True);
                   <!-- section#project -->
                   <section id="project">
 
-                    <div id="project-banner" class="span10">
+                    <div id="project-banner" class="span12">
                       <div class="banner" style="position: relative;">
                         <aside style="position: absolute; background-color: rgba(255,255,255,0.4); width: 400px; height: 100px; top:100px;">
                           <div><?php the_title() ?></div>

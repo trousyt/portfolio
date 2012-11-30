@@ -16,8 +16,27 @@ add_theme_support('post-thumbnails');
 add_action('after_setup_theme', 'simp_setup');
 if (! function_exists('simp_setup')) :
   function simp_setup() {
-  	// Add support for project thumbnails;
-  	add_image_size('project-thumbnail', 303, 220, true);
+  	// Add support for different project image sizes.
+  	add_image_size('project-thumb-size', 303, 220, true);
+    add_image_size('project-banner-size', 820, 220, true);
+
+    // Register multiple featured images for Portfolio.
+    if( class_exists( 'kdMultipleFeaturedImages' ) ) {
+
+            $args = array(
+                    'id' => 'project-banner',
+                    'post_type' => 'portfolio',      // Set this to post or page
+                    'labels' => array(
+                        'name'      => 'Project Banner',
+                        'set'       => 'Set Project Banner',
+                        'remove'    => 'Remove Project Banner',
+                        'use'       => 'Use as Project Banner',
+                    )
+            );
+
+            new kdMultipleFeaturedImages( $args );
+    }
+
 
     // We are providing our own filter for excerpt_length (or using the unfiltered value)
     // remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );

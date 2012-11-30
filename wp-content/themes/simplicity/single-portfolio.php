@@ -80,7 +80,11 @@ ini_set('display_errors', True);
                 <!-- .content -->
                 <div class="content buffer">
 
+                  <section id="project">
 
+                    <div id="banner" class="span10"><?php tkd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?></div>
+
+                  </section>
 
                 </div>
                 <!-- /.content -->

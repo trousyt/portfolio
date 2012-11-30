@@ -92,13 +92,13 @@ ini_set('display_errors', True);
 
                     <div id="project-banner">
                       <div class="banner" style="position: relative;">
-                        <aside style="position: absolute; background-color: rgba(255,255,255,0.8); width: 400px; height: 100px; top:100px; padding-left: 10px;">
+                        <aside style="position: absolute; background-color: rgba(255,255,255,0.8); width: 400px; height: 120px; top:100px; padding-left: 10px;">
                           <h2>
                             <?php the_title() ?> <br/>
                             <small><?php the_excerpt() ?></small>
                           </h2>
-                          <div>Categories <small><?php the_category(', ') ?></small></div>
-                          <div>Tags <small>Test</small></div>
+                          <div><strong>Categories</strong> <small><?php the_category(', ') ?></small></div>
+                          <div><strong>Tags</strong> <small>Test</small></div>
                       </aside>
                         <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
                         

@@ -66,26 +66,33 @@
                 
                 <!-- .content -->
                 <div class="content buffer">
-                  <p><?php 
+                	<?php echo 'is first page?: ' . is_first_page() ?>
+                  <?php 
+                  	// Display the page's content.
                   	$id = 29;
                   	$post = get_page($id);
                   	$content = apply_filters('the_content', $post->post_content);
                   	echo $content;
-                  ?></p>
+                  ?>
+
+                  <!-- #portfolio -->
                   <div id="portfolio" class="buffer2x clearfix">
+                  	<!-- loop -->
                   	<?php
                   	$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 9 );
 										$loop = new WP_Query( $args ); 
 										while ($loop->have_posts()) : $loop->the_post();
 										?>
-										<!-- loop -->
+										
 										<div class="portfolio-item">
                       <div class="img"></div>
                       <aside><div><?php the_title() ?> / <?php the_category(', ') ?></div><div><small>Tags</small></div></aside>
                     </div>
-										<!-- /loop -->
+										
 										<?php endwhile; ?>
+										<!-- /loop -->
                   </div>
+                  <!-- /#portfolio -->
                   
                 </div>
                 <!-- /.content -->

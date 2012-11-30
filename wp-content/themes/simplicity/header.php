@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><?php wp_title('|', true, 'right'); ?></title>
+  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="author" content="Troy Parkinson" />

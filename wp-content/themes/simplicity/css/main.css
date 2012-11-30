@@ -284,10 +284,10 @@ ul.collapse-list li {
 #work .tagline {
 	color: #44c783;
 }
-#work #body-wrapper h1 {
+#work h1, #work h2, #work h3 {
 	color: #44c783;
 }
-#blog a {
+#work a {
 	color: #44c783;
 }
 

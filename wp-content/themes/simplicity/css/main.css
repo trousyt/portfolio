@@ -305,6 +305,10 @@ ul.collapse-list li {
 	
 }
 
+#work #project-content .alignright {
+	margin: 10px 0 10px 10px;
+}
+
 #work .portfolio-item {
 	float: left;
 	height: 248px;

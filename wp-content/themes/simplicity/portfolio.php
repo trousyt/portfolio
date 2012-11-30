@@ -1,11 +1,7 @@
 <?php
- /*
-  * Theme: "Simplicity"
-  * Author: Troy Parkinson
-  * Created: 11/29/12
-  * File: portfolio.php
-  * Description: Handles the projects landing page.
-  */
+/*
+Template Name: Portfolio
+*/
 ?>
 
 <?php

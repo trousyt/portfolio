@@ -3,7 +3,7 @@
   * Theme: "Simplicity"
   * Author: Troy Parkinson
   * Created: 11/29/12
-  * File: projects.php
+  * File: portfolio.php
   * Description: Handles the projects landing page.
   */
 ?>

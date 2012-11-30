@@ -7,6 +7,8 @@
 * Description: Register this custom theme, post types, taxonomies, and meta fields.
 */
 
+add_theme_support('post-thumbnails');
+
 /*********************************
  * SIMPLICITY_SETUP
  * Setup with custom theme routines.
@@ -14,11 +16,8 @@
 add_action('after_setup_theme', 'simp_setup');
 if (! function_exists('simp_setup')) :
   function simp_setup() {
-  	// Add support for post thumbnails;
-  	if (function_exists('add_theme_support')) {
-  		add_theme_support('post-thumbnails');
-  		add_image_size('project-thumbnail', 303, 220, true);
-  	}
+  	// Add support for project thumbnails;
+  	add_image_size('project-thumbnail', 303, 220, true);
 
     // We are providing our own filter for excerpt_length (or using the unfiltered value)
     // remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );

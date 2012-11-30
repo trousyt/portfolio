@@ -66,7 +66,6 @@
                 
                 <!-- .content -->
                 <div class="content buffer">
-                	<?php echo 'is first page?: ' . is_first_page() ?>
                   <?php 
                   	// Display the page's content.
                   	$id = 29;

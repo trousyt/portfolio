@@ -64,36 +64,31 @@
                   </div>
                 </header>
                 
+                <!-- .content -->
                 <div class="content buffer">
-                  <p><?php the_content() ?></p>
+                  <p><?php 
+                  	$id = 29;
+                  	$post = get_page($id);
+                  	$content = apply_filters('the_content', $post->post_content);
+                  	echo $content;
+                  ?></p>
                   <div id="portfolio" class="buffer2x clearfix">
-                    <div class="portfolio-item">
+                  	<?php
+                  	$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 9 );
+										$loop = new WP_Query( $args ); 
+										while ($loop->have_posts()) : $loop->the_post();
+										?>
+										<!-- loop -->
+										<div class="portfolio-item">
                       <div class="img"></div>
-                      <aside><div>Item 1 / Category</div><div><small>Tags</small></div></aside>
+                      <aside><div><?php the_title() ?> / <?php the_category(', ') ?></div><div><small>Tags</small></div></aside>
                     </div>
-                    <div class="portfolio-item">
-                      <div class="img"></div>
-                      <aside><div>Item 2 / Category</div><div><small>Tags</small></div></aside>
-                    </div>
-                    <div class="portfolio-item">
-                      <div class="img"></div>
-                      <aside><div>Item 3 / Category</div><div><small>Tags</small></div></aside>
-                    </div>
-                    <div class="portfolio-item">
-                      <div class="img"></div>
-                      <aside><div>Item 4 / Category</div><div><small>Tags</small></div></aside>
-                    </div>
-                    <div class="portfolio-item">
-                      <div class="img"></div>
-                      <aside><div>Item 5 / Category</div><div><small>Tags</small></div></aside>
-                    </div>
-                    <div class="portfolio-item">
-                      <div class="img"></div>
-                      <aside><div>Item 6 / Category</div><div><small>Tags</small></div></aside>
-                    </div>
+										<!-- /loop -->
+										<?php endwhile; ?>
                   </div>
                   
                 </div>
+                <!-- /.content -->
                 
               </section>
               <!-- /section#body -->

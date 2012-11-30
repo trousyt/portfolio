@@ -84,8 +84,11 @@
 										?>
 										
 										<div class="portfolio-item">
-                      <div class="img" alt="<?php echo get_the_content() ?>"><?php the_post_thumbnail() ?></div>
-                      <aside><div><a href="<?php the_permalink() ?>"><?php the_title() ?></a> / <?php the_category(', ') ?></div><div><small>Tags</small></div></aside>
+                      <div class="img" alt="<?php echo get_the_content() ?>"><?php the_post_thumbnail('project-thumbnail') ?></div>
+                      <aside>
+                      	<div><a href="<?php the_permalink() ?>"><?php the_title() ?></a> / <?php the_category(', ') ?></div>
+                      	<div><small>Tags</small></div>
+                      </aside>
                     </div>
 										
 										<?php endwhile; ?>

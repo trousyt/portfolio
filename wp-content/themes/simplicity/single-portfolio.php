@@ -66,7 +66,14 @@ ini_set('display_errors', True);
                 <header>
                   <div class="row">
                     <div class="span7">
-                      <h3 class="tagline em">Portfolio Schwartfolio.</h3>
+                      <h3 class="tagline em">
+                        <?php 
+                          $tagline_meta = get_post_meta( get_the_ID(), 'tagline', true );
+                          if ( $tagline_meta != '' ) {
+                            echo $tagline_meta;
+                          }
+                        ?>
+                      </h3>
                     </div>
                     <div class="span3 right-align">
                       <h1>Work</h1>
@@ -80,11 +87,24 @@ ini_set('display_errors', True);
                 <!-- .content -->
                 <div class="content buffer">
 
+                  <!-- section#project -->
                   <section id="project">
 
-                    <div id="banner" class="span10"><?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?></div>
+                    <div id="project-banner" class="span10">
+                      <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
+                      <aside style="float: right; margin-top: 160px; background-color: rgba(0,0,0,0.6); width: 400px;">
+                        <div><?php the_title() ?></div>
+                        <div>Categories <small><?php the_category(', ') ?></small></div>
+                        <div>Tags <small>Test</small></div>
+                      </aside>
+                    </div>
+
+                    <div id="project-content">
+                      <?php the_content() ?>
+                    </div>
 
                   </section>
+                  <!-- /section#project -->
 
                 </div>
                 <!-- /.content -->

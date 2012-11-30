@@ -92,7 +92,7 @@ ini_set('display_errors', True);
 
                     <div id="project-banner" class="span12">
                       <div class="banner" style="position: relative;">
-                        <aside style="position: absolute; background-color: rgba(255,255,255,0.4); width: 400px; height: 100px; top:100px; padding-left: 10px;">
+                        <aside style="position: absolute; background-color: rgba(255,255,255,0.8); width: 400px; height: 100px; top:100px; padding-left: 10px;">
                           <h3><?php the_title() ?></h3>
                           <div>Categories <small><?php the_category(', ') ?></small></div>
                           <div>Tags <small>Test</small></div>

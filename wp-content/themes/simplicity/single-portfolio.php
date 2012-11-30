@@ -94,7 +94,7 @@ ini_set('display_errors', True);
                       <div class="banner" style="float: left;">
                         <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
                       </div>
-                      <aside style="margin-top: -30px; background-color: rgba(255,255,255,0.6); width: 400px; height: 30px;">
+                      <aside style="margin-top: -30px; background-color: rgba(255,255,255,0.6); width: 400px; height: 100px;">
                         <div><?php the_title() ?></div>
                         <div>Categories <small><?php the_category(', ') ?></small></div>
                         <div>Tags <small>Test</small></div>

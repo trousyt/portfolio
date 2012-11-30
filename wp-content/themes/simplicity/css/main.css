@@ -309,11 +309,11 @@ ul.collapse-list li {
 	background-color: #e3e3e3;
 }
 #work .portfolio-item aside {
-	padding: 2px
+	padding: 2px;
 	background-color: #efefef;
 	font-size: 2em;
 	color: gray;
-	line-height: 2em;
+	line-height: 1.1em;
 
 
 }

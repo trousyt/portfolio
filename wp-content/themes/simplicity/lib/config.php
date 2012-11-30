@@ -18,7 +18,7 @@ if (! function_exists('simp_setup')) :
   function simp_setup() {
   	// Add support for different project image sizes.
   	add_image_size('project-thumb-size', 303, 220, true);
-    add_image_size('project-banner-size', 900, 220, true);
+    add_image_size('project-banner-size', 920, 220, true);
 
     // Register multiple featured images for Portfolio.
     if( class_exists( 'kdMultipleFeaturedImages' ) ) {
@@ -28,7 +28,7 @@ if (! function_exists('simp_setup')) :
                     'post_type' => 'portfolio',      // Set this to post or page
                     'labels' => array(
                         'name'      => 'Project Banner',
-                        'set'       => 'Set Project Banner (should optimally be 1000 x 220px)',
+                        'set'       => 'Set Project Banner (should optimally be 920 x 220px)',
                         'remove'    => 'Remove Project Banner',
                         'use'       => 'Use as Project Banner',
                     )

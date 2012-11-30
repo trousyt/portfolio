@@ -42,7 +42,7 @@ function simp_register_post_types() {
     'capability_type' => 'post',
     'hierarchical'  => false,
     'menu_position' => null,
-    'supports'      => array('title', 'editor', 'thumbnail', 'excerpt', 'comments')
+    'supports'      => array('title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields')
   );
 
   register_post_type('portfolio', $args);

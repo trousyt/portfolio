@@ -91,8 +91,10 @@ ini_set('display_errors', True);
                   <section id="project">
 
                     <div id="project-banner" class="span10">
-                      <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
-                      <aside style="float: right; margin-top: 160px; background-color: rgba(0,0,0,0.6); width: 400px;">
+                      <div class="banner" style="float: left;">
+                        <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
+                      </div>
+                      <aside style="margin-top: 160px; background-color: rgba(0,0,0,0.6); width: 400px;">
                         <div><?php the_title() ?></div>
                         <div>Categories <small><?php the_category(', ') ?></small></div>
                         <div>Tags <small>Test</small></div>

@@ -84,7 +84,7 @@
 										?>
 										
 										<div class="portfolio-item">
-                      <div class="img" alt="<?php the_content() ?>" style="background-image: url('<?php the_post_thumbnail() ?>');"></div>
+                      <div class="img" alt="<?php echo get_the_content() ?>" style="background-image: url('<?php the_post_thumbnail() ?>');"></div>
                       <aside><div><a href="<?php the_permalink() ?>"><?php the_title() ?></a> / <?php the_category(', ') ?></div><div><small>Tags</small></div></aside>
                     </div>
 										

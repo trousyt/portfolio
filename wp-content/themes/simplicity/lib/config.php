@@ -18,7 +18,7 @@ if (! function_exists('simp_setup')) :
   function simp_setup() {
   	// Add support for different project image sizes.
   	add_image_size('project-thumb-size', 303, 220, true);
-    add_image_size('project-banner-size', 1000, 220, true);
+    add_image_size('project-banner-size', 900, 220, true);
 
     // Register multiple featured images for Portfolio.
     if( class_exists( 'kdMultipleFeaturedImages' ) ) {

@@ -17,9 +17,6 @@ h1 {
 h3 {
 	font-size: 1.2em;
 }
-h3.tagline {
-
-}
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Archivo Narrow', sans-serif;
 }
@@ -34,7 +31,7 @@ blockquote p {
 	color: #999;
 	text-shadow: 1px 1px #fff;
 	font-style: italic;
-	font-size: 2.1em;
+	font-size: 1.4em;
 	line-height: 1.1em;
 }
 
@@ -440,6 +437,10 @@ header .divider {
 	/*-webkit-box-shadow: 0px 6px 30px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 6px 30px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 6px 30px rgba(50, 50, 50, 0.75);*/
+}
+
+header h3 small.tagline {
+	line-height: 1em;
 }
 
 header .nav ul {

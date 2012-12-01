@@ -348,6 +348,7 @@ ul.collapse-list li {
 }
 #work .portfolio-item .cats, #work #project-banner .cats {
 	font-size: 1.5em;
+	color: #999;
 }
 #work .portfolio-item .tags, #work #project-banner .tags {
 	font-size: .8em;

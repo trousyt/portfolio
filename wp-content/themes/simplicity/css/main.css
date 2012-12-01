@@ -363,9 +363,6 @@ ul.collapse-list li {
 #blog header .divider {
 	background-color: #7da7d9;
 }
-#blog .tagline {
-	color: #7da7d9;
-}
 
 #blog #blog-roll {
 	
@@ -408,9 +405,6 @@ ul.collapse-list li {
 #about a {
 	color: #f5aa5b;
 }
-#about .tagline {
-	color: #f5aa5b;
-}
 #about #body-wrapper h1 {
 	color: #f5aa5b;
 }
@@ -422,9 +416,6 @@ ul.collapse-list li {
 	background-color: #ee145b;
 }
 #contact a {
-	color: #ee145b;
-}
-#contact .tagline {
 	color: #ee145b;
 }
 #contact #body-wrapper h1 {

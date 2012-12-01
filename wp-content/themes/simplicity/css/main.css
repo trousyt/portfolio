@@ -28,6 +28,14 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 	font-style: italic;
 	font-family: Scada;
 }
+blockquote p {
+	color: #999;
+	text-shadow: 1px 1px #fff;
+	text-align: center;
+	font-style: italic;
+	font-size: 2.5em;
+	line-height: 1.1em;
+}
 
 #body-wrapper h1 {
 	font-family: Scada;
@@ -305,20 +313,12 @@ ul.collapse-list li {
 	color: #44c783;
 }
 
-#work #project-content blockquote p {
-	color: #999;
-	text-shadow: 1px 1px #fff;
-	text-align: center;
-	font-style: italic;
-	font-size: 2.5em;
-	line-height: 1.2em;
-}
 #work #project-content .alignright {
 	margin: 10px 0 10px 10px;
 }
 
 #work #project-banner aside strong {
-	text-size: .5em;
+	font-size: .8em;
 	color: #44c783;
 }
 

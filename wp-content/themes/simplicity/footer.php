@@ -19,9 +19,9 @@
               <li><a href="/blog" title="Blog">Blog</a></li>
             </ul>
           </div>
-          <div class="row">
-            <strong>Contact Me</strong> @ <a href="mailto:troy@troypark.com">troy@troypark.com</a> or <a href="tel:17022859127">+1 702 285-9127</a>
-          </div>
+        </div>
+        <div class="row">
+          <strong>Contact Me</strong> @ <a href="mailto:troy@troypark.com">troy@troypark.com</a> or <a href="tel:17022859127">+1 702 285-9127</a>
         </div>
       </div>
     </footer>

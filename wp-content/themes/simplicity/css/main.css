@@ -84,6 +84,10 @@ a:visited {
 .right-align {
 	text-align: right;
 }
+
+.content {
+	line-height: 1.2em;
+}
 .content .alignright {
 	margin: 10px 0 10px 10px;
 }

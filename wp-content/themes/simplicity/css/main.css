@@ -2,12 +2,13 @@
    BASE
    ========================================================================== */
 body {
-	background: url('../img/layout_main-background.png') repeat;
+	/*background: url('../img/layout_main-background.png') repeat;*/
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
 #content-wrapper {
+	margin-top: 40px;
 	min-height: 600px;
 }
 
@@ -180,9 +181,9 @@ ul.collapse-list li {
 	font-size: 1.4em;
 	vertical-align: middle;
 }
-.nav .nav-item:hover {
+/*.nav .nav-item:hover {
 	background-color: #e3e3e3;
-}
+}*/
 .nav .nav-item .bl {
 	display: inline-block;
 	width: 12px;
@@ -314,7 +315,7 @@ ul.collapse-list li {
 #work h1, #work h2, #work h3 {
 	color: #44c783;
 }
-#work a {
+#work .content a, #work .nav .active a {
 	color: #44c783;
 }
 

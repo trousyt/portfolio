@@ -9,7 +9,7 @@ body {
 
 #content-wrapper {
 	margin-top: 40px;
-	min-height: 600px;
+	min-height: 800px;
 }
 
 h1 {
@@ -29,8 +29,7 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 	font-family: Scada;
 }
 blockquote p {
-	color: #999;
-	text-shadow: 1px 1px #fff;
+	margin: 10px 0 10px 0;
 	font-style: italic;
 	font-size: 1.4em;
 	line-height: 1.3em;
@@ -321,6 +320,7 @@ ul.collapse-list li {
 
 #work #project-banner {
 	background-color: #999;
+	line-height: 1em;
 }
 #work #project-banner aside strong {
 	font-size: .9em;
@@ -355,7 +355,7 @@ ul.collapse-list li {
 #blog h1, #blog h2, #blog h3, #blog h4 {
 	color: #7da7d9;
 }
-#blog a {
+#blog .content a, #blog .nav .active a {
 	color: #7da7d9;
 }
 #blog header .divider {
@@ -400,11 +400,17 @@ ul.collapse-list li {
 #about header .divider {
 	background-color: #f5aa5b;
 }
-#about a {
+#about .content a, #about .nav .active a {
 	color: #f5aa5b;
 }
-#about #body-wrapper h1 {
+#about h1 {
 	color: #f5aa5b;
+}
+
+/* Body content styles */
+#about .content h2 {
+	color: #666;
+	font-size: 3em;
 }
 
 /* ==========================================================================
@@ -413,7 +419,7 @@ ul.collapse-list li {
 #contact header .divider {
 	background-color: #ee145b;
 }
-#contact a {
+#contact .content a, #contact .nav .active a {
 	color: #ee145b;
 }
 #contact #body-wrapper h1 {

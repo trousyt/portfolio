@@ -351,6 +351,10 @@ ul.collapse-list li {
 #work .portfolio-item .tags {
 	font-size: .8em;
 }
+#work .portfolio-item .tags a:hover {
+	background-color: #44c783;
+	color: white;
+}
 #work .portfolio-item aside {
 	padding: 2px;
 	color: gray;

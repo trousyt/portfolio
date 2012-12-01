@@ -77,7 +77,7 @@ ini_set('display_errors', True);
                       </h3>
                     </div>
                     <div class="span3 right-align">
-                      <h1>Portfolio</h1>
+                      <h1>Contact</h1>
                     </div>
                   </div>
                   <div class="row">

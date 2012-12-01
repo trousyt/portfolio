@@ -89,7 +89,7 @@ ini_set('display_errors', True);
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla dignissim dui, et volutpat ante tempor in. Aenean congue, libero id vestibulum volutpat, ipsum est fringilla metus, non faucibus odio urna vitae velit. Cras felis lectus, varius quis tristique at, vestibulum vel dui. Etiam fermentum suscipit nibh eget faucibus. Etiam interdum consequat ipsum, non mattis justo interdum sed. Nullam eleifend feugiat metus euismod molestie. Morbi id convallis dui. Nunc placerat posuere pharetra. Sed a lorem ipsum.</p>
                   <p>
                     <!-- #contact-me -->
-                    <div id="contact-me" class="rotate-neg5">
+                    <div id="contact-me">
                       <div class="span6 offset3">
                         <div id="contact-me-inner">
                           <form id="contact-form">

@@ -85,34 +85,6 @@
                 </div>
               <!-- /row -->
 
-              <!-- row -->
-              <!--<div class="row">-->
-                <!-- #contact-me -->
-                <!--<div id="contact-me" class="rotate-neg5">
-                  <div class="span6 offset3">
-                    <div id="contact-me-inner">
-                      <form id="contact-form">
-                        <div class="info row">
-                          <h2>Who are you?</h2>
-                          <input id="name" type="text" placeholder="Name" />
-                          <input id="email" type="email" placeholder="Email" />
-                        </div>
-                        <div class="message row">
-                          <h2>What's on your mind?</h2>
-                          <textarea rows="5"></textarea>
-                        </div>
-                        <div class="row">
-                           <button class="submit btn btn-inverse btn-large">Say hello!</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-
-                </div>-->
-                <!-- /#contact-me -->
-              <!--</div>-->
-              <!-- /row -->
-
             </div>
             <!-- /#body-wrapper -->
           </section>

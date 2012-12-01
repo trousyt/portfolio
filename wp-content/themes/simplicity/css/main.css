@@ -535,7 +535,10 @@ header .nav li {
 	padding-top: 50px;
 	height: 460px;
 	background: url('../img/layout_main-contact-me-background.png') no-repeat;
+	color: white;
 }
+
+/*
 #contact-me:hover {
 	transform: rotate(0deg);
 	-ms-transform: rotate(0deg);
@@ -543,6 +546,7 @@ header .nav li {
 	-o-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 }
+*/
 
 #index #contact-me h2, #index #contact-me h3 {
 	text-shadow: 2px 2px black;
@@ -561,7 +565,7 @@ header .nav li {
 
 /* MQ: SCREEN SIZE: 1140PX */
 @media screen and (min-width: 768px) and (max-width: 979px) {
-	#contact-me {
+	/*#contact-me {
 		padding-left: 60px;
 	}
 	#contact-me input[type='text'], input[type='email'] {
@@ -572,7 +576,7 @@ header .nav li {
 	}
 	#contact-me .submit {
 		width: 93%;
-	}
+	}*/
 }
 
 /* MQ: SCREEN SIZE: 767PX */
@@ -595,7 +599,7 @@ header .nav li {
 	}
 
 	/* CONTACT FORM */
-	#contact-me {
+	/*#contact-me {
 		background: #e7c882;
 		padding-left: 20px;
 		transform: rotate(0deg);
@@ -615,5 +619,5 @@ header .nav li {
 	}
 	#contact-me .submit {
 		width: 93%;	
-	}
+	}*/
 }

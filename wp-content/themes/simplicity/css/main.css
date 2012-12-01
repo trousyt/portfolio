@@ -348,13 +348,13 @@ ul.collapse-list li {
 #work .portfolio-item .cats {
 	font-size: 1.5em;
 }
-$work .portfolio-item .tags {
+#work .portfolio-item .tags {
 	font-size: .8em;
 }
 #work .portfolio-item aside {
 	padding: 2px;
 	color: gray;
-	line-height: 1.1em;
+	line-height: 1.8em;
 }
 #work .portfolio-item aside small {
 	font-size: 1.2em;

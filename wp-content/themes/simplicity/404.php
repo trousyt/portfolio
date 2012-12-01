@@ -26,7 +26,6 @@
                 </div>
                 <div class="span6">
                   <div class="nav pull-right">
-                  	<span>Where are we?? -></span>
                     <ul>
                       <li class="contact nav-item">
                         <a href="/contact"><div class="bl contact-back"></div>Contact</a>
@@ -87,11 +86,14 @@
 							$failuremess = "A user tried to go to $website" . $_SERVER['REQUEST_URI'] . " and received a 404 (page not found) error. ";
 							$failuremess .= "It wasn't their fault, so try fixing it. They came from ".$_SERVER['HTTP_REFERER'];
 							mail($adminemail, "Bad Link To ".$_SERVER['REQUEST_URI'], $failuremess, "From: $websitename <noreply@$website>"); #email you about problem
-							$casemessage = "An administrator has been emailed about this problem."; #set a friendly message
+							$casemessage = "An administrator has been emailed about this broken link."; #set a friendly message
 						  }
 						  echo " " . $website . $_SERVER['REQUEST_URI']; 
 						?> 
-						and it doesn't exist. <?php echo $casemessage; ?>  We <em>profusely</em> apologize for the error! Try using the above navigation or use the back button in your browser.
+						and it doesn't exist. Hmm... Perhaps a Tardis would come in handy. <?php echo $casemessage; ?>  Anyhow, we <em>profusely</em> apologize for the error! May we suggest using the above navigation or use the back button in your browser to get out of here?
+					</p>
+					<p>
+						<img src="<?php get_template_directory() . '/img/layout_404.png' ?>" title="Page not found.">
 					</p>
 
                 </div>

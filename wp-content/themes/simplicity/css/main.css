@@ -114,6 +114,13 @@ a:visited {
 	margin: 40px 0 40px 0;
 }
 
+.padl {
+	padding-left: 20px;
+}
+.padr {
+	padding-right: 20px;
+}
+
 /* CIRCULAR HEADERS */
 h1.circular, h2.circular {
 	display: inline-block;
@@ -136,6 +143,12 @@ h1.circular, h2.circular {
 
 ul.collapse-list li {
 	display: inline-block;
+}
+ul.collapse-list.padl li {
+	padding-left: 20px;
+}
+ul.collapse-list.padr li {
+	padding-right: 20px;
 }
 
 

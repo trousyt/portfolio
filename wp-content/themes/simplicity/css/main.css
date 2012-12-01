@@ -5,6 +5,10 @@ body {
 	background: url('../img/layout_main-background.png') repeat;
 }
 
+#content-wrapper {
+	min-height: 600px;
+}
+
 h1 {
 	font-size: 4em;
 }
@@ -241,7 +245,7 @@ ul.collapse-list li {
 #topbar {
 	margin: 0;
 	padding: 0;
-	height: 40px;
+	height: 20px;
 	width: 100%;
 	background-color: black;
 	color: white;
@@ -301,8 +305,19 @@ ul.collapse-list li {
 	color: #44c783;
 }
 
+#work #project-content blockquote {
+	background-color: gray;
+	text-align: center;
+	font-style: italic;
+	font-size: 1.2em;
+}
 #work #project-content .alignright {
 	margin: 10px 0 10px 10px;
+}
+
+#work #project-banner aside strong {
+	text-size: .8em;
+	color: #44c783;
 }
 
 #work .portfolio-item {

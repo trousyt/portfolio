@@ -4,15 +4,11 @@ Template Name: Portfolio
 */
 ?>
 
-<?php
- 
-error_reporting(E_ALL);
-ini_set('display_errors', True);
-
-?>
-
 <?php get_header(); ?>
 
+  <!-- =========================================
+       INDEX
+       ========================================= -->
           <!-- section#content-wrapper -->
           <section id="work">
 
@@ -63,7 +59,14 @@ ini_set('display_errors', True);
                   <div class="row">
                     <div class="span7">
                       <h3 class="tagline">
-                        <small>Portfolio Schwartfolio.</small>
+                        <small>
+                          <?php 
+                            $tagline_meta = get_post_meta( get_the_ID(), 'tagline', true );
+                            if ( $tagline_meta != '' ) {
+                              echo $tagline_meta;
+                            }
+                          ?>
+                          </small>
                       </h3>
                     </div>
                     <div class="span3 right-align">

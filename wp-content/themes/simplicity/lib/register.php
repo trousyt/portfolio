@@ -31,7 +31,6 @@ function simp_register_post_types() {
 
   $args = array(
     'labels'        => $labels,
-    'description'   => 'Registers our custom Project/Portfolio post type',
     'public'        => true,
     'publicly_queryable' => true,
     'show_ui'       => true,
@@ -42,7 +41,8 @@ function simp_register_post_types() {
     'capability_type' => 'post',
     'hierarchical'  => false,
     'menu_position' => null,
-    'supports'      => array('title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields')
+    'supports'      => array('title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
+    'taxonomies'    => array('category', 'post_tag')
   );
 
   register_post_type('portfolio', $args);

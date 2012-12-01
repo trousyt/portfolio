@@ -1,11 +1,7 @@
 <?php
- /*
-  * Theme: "Simplicity"
-  * Author: Troy Parkinson
-  * Created: 11/29/12
-  * File: single-portfolio.php
-  * Description: Handles the projects single page view.
-  */
+/*
+Template Name: Contact
+*/
 ?>
 
 <?php
@@ -21,7 +17,7 @@ ini_set('display_errors', True);
        INDEX
        ========================================= -->
           <!-- section#content-wrapper -->
-          <section id="work">
+          <section id="contact">
 
             <!-- header -->
             <header class="buffer ">
@@ -65,12 +61,11 @@ ini_set('display_errors', True);
                 while ( have_posts() ) : the_post();
                   $custom_fields = get_post_custom();
                 ?>
-
+                
                 <header>
                   <div class="row">
-                    <div class="span7">
-                      <h3 class="tagline">
-                          <small>
+                    <h3 class="tagline">
+                        <small>
                           <?php 
                             $tagline_meta = get_post_meta( get_the_ID(), 'tagline', true );
                             if ( $tagline_meta != '' ) {
@@ -79,9 +74,8 @@ ini_set('display_errors', True);
                           ?>
                           </small>
                       </h3>
-                    </div>
                     <div class="span3 right-align">
-                      <h1>Portfolio</h1>
+                      <h1>Contact</h1>
                     </div>
                   </div>
                   <div class="row">
@@ -89,35 +83,8 @@ ini_set('display_errors', True);
                   </div>
                 </header>
                 
-                <!-- .content -->
                 <div class="content buffer">
-
-                  <!-- section#project -->
-                  <section id="project">
-
-                    <div id="project-banner">
-                      <div class="banner" style="position: relative;">
-                        <aside style="position: absolute; background-color: rgba(255,255,255,0.8); width: 400px; height: 120px; top:100px; padding-left: 10px;">
-                          <h2>
-                            <?php the_title() ?> <br/>
-                            <small><?php the_excerpt() ?></small>
-                          </h2>
-                          <div><strong>Categories</strong> <small><?php the_category(', ') ?></small></div>
-                          <div><strong>Tags</strong> <small>Test</small></div>
-                        </aside>
-                        <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
-                      </div> 
-                    </div>
-
-                    <div id="project-content" class="buffer">
-                      <?php the_content() ?>
-                    </div>
-
-                  </section>
-                  <!-- /section#project -->
-
-                </div>
-                <!-- /.content -->
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla dignissim dui, et volutpat ante tempor in. Aenean congue, libero id vestibulum volutpat, ipsum est fringilla metus, non faucibus odio urna vitae velit. Cras felis lectus, varius quis tristique at, vestibulum vel dui. Etiam fermentum suscipit nibh eget faucibus. Etiam interdum consequat ipsum, non mattis justo interdum sed. Nullam eleifend feugiat metus euismod molestie. Morbi id convallis dui. Nunc placerat posuere pharetra. Sed a lorem ipsum.</p>
                 
                 <?php endwhile; ?>
 
@@ -129,3 +96,4 @@ ini_set('display_errors', True);
           <!-- /section#content-->
       
 <?php get_footer(); ?>
+                  

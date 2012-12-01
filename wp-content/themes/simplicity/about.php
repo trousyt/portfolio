@@ -4,13 +4,6 @@ Template Name: About
 */
 ?>
 
-<?php
- 
-error_reporting(E_ALL);
-ini_set('display_errors', True);
-
-?>
-
 <?php get_header(); ?>
 
   <!-- =========================================
@@ -24,7 +17,7 @@ ini_set('display_errors', True);
               <div class="row">
                 <div class="span4"> <!-- offset 2 -->
                   <div class="logo">
-                    <a href="index.html">Placeholder</a>
+                    <a href="/">Placeholder</a>
                   </div>
                 </div>
                 <div class="span6">

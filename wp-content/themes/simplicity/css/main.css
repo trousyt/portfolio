@@ -253,7 +253,7 @@ ul.collapse-list li {
 #topbar {
 	margin: 0;
 	padding: 0;
-	height: 20px;
+	height: 40px;
 	width: 100%;
 	background-color: black;
 	color: white;
@@ -262,7 +262,7 @@ ul.collapse-list li {
 }
 #topbar ul li {
 	margin-top: 10px;
-	margin-left: 20px; 
+	margin-left: 20px;
 }
 #topbar ul li a {
 	color: white;

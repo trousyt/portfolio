@@ -103,8 +103,7 @@ ini_set('display_errors', True);
                           <div><strong>Tags</strong> <small>Test</small></div>
                         </aside>
                         <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
-                        </div> 
-                      </div>
+                      </div> 
                     </div>
 
                     <div id="project-content" class="buffer">

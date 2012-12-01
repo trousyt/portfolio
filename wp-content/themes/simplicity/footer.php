@@ -10,8 +10,7 @@
     <!-- .footer -->
     <footer class="footer center-align">
       <div class="container">
-        <div class="span10">
-          <div class="wrapper">
+        <div class="wrapper span10">
             <div class="row">
               <ul class="unstyled">
                 <li><a href="/contact" title="Contact">Contact</a></li>

@@ -64,11 +64,6 @@
                           </div>
                         </div>
                       </div>
-                      <script type="text/javascript">
-                        $(function() {
-                          $('#slides').slides();
-                        });
-                      </script>
                     </div>
                     <div class="span4">
                       <div id="body-nav">
@@ -89,5 +84,11 @@
             <!-- /#body-wrapper -->
           </section>
           <!-- /section#content-->
+
+          <script>
+            jQuery(document).ready(function($) {
+              $('#slides').slides();
+            })
+          </script>
       
 <?php get_footer(); ?>

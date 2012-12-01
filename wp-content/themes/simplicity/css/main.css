@@ -290,18 +290,21 @@ ul.collapse-list li {
 	margin-top: 80px;
 	padding-top: 20px;
 	height: 140px;
-	background: url('../img/layout_main-footer-border-top.png') no-repeat left top;
-	color: white;
-}
-.footer a, .footer a:hover {
+	background: url('../img/layout_main-footer-border-top.png') no-repeat center top;
 	color: black;
 }
+.footer a, .footer a:hover {
+	color: white;
+}
 .footer a {
-	border-bottom: 1px dotted white;
+	background-color: black;
 }
 .footer a:hover {
 	text-decoration: none;
-	border-bottom: none;
+}
+.footer ul li {
+	display: inline-block;
+	padding-left: 15px;
 }
 .footer #seal {
 	font-size: .8em;

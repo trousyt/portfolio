@@ -102,8 +102,8 @@ ini_set('display_errors', True);
                             <?php the_title() ?> <br/>
                             <small><?php the_excerpt() ?></small>
                           </h2>
-                          <div class="cats"><strong>Categories</strong> <small><?php the_category(', ') ?></small></div>
-                          <div class="tags"><small><?php the_tags('<strong>Tags</strong>', ' ') ?></small></div>
+                          <div class="cats"><small><?php the_category(', ') ?></small></div>
+                          <div class="tags"><small><?php the_tags('', ' ') ?></small></div>
                         </aside>
                         <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
                       </div> 

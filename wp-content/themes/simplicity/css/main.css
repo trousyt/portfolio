@@ -180,9 +180,11 @@ ul.collapse-list li {
 	font-size: 1.4em;
 	vertical-align: middle;
 }
-/*.nav .nav-item:hover {
-	background-color: #e3e3e3;
-}*/
+
+/* Make active nav item .1em larger */
+.nav .nav-item .active {
+	font-size: 1.5em;
+}
 .nav .nav-item .bl {
 	display: inline-block;
 	width: 12px;

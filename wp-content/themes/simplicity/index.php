@@ -38,7 +38,7 @@
                     <h1 class="title">My name is <a href="/about"><strong>Troy Parkinson</strong></a> and I'm a software developer and graphic designer. I create practical web apps, iOS apps, and other intuitive software that makes life easier by using proven, standards-driven design.
                     </h1>
                     <div >
-                        <a href="#contact-me" class="btn btn-go btn-large">Contact me today to <strong>have a chat</strong>.</a>
+                        <a href="/contact" class="btn btn-inverse btn-large">Contact me today to <strong>have a chat</strong>.</a>
                       </div>
                   </div>
                 </div>
@@ -88,7 +88,7 @@
               <!-- row -->
               <!--<div class="row">-->
                 <!-- #contact-me -->
-                <div id="contact-me" class="rotate-neg5">
+                <!--<div id="contact-me" class="rotate-neg5">
                   <div class="span6 offset3">
                     <div id="contact-me-inner">
                       <form id="contact-form">
@@ -108,7 +108,7 @@
                     </div>
                   </div>
 
-                </div>
+                </div>-->
                 <!-- /#contact-me -->
               <!--</div>-->
               <!-- /row -->

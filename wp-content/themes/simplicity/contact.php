@@ -88,6 +88,16 @@ ini_set('display_errors', True);
                 <div class="content buffer">
                   <?php the_content() ?>
                   <p>
+                    <h2>Use these nifty new social mediums (or vanilla email):</h2>
+                    <ul class="unstyled buffer center-align">
+                      <li><a href="http://github.com/trousyt"><i class="icon-heart"></i> Visit me on GitHub</a></li>
+                      <li><a href="http://twitter.com/trousyt"><i class="icon-heart"></i> Follow me on Twitter</a></li>
+                      <li><a href="http://www.linkedin.com/pub/troy-parkinson/38/592/720"><i class="icon-heart"></i> Visit me on LinkedIn</a></li>
+                      <li><a href="mailto:troy@troypark.com"><i class="icon-envelope"></i> troy [at] troypark.com</a></li>
+                    </ul>
+                  </p>
+                  <p>
+                    <h2>Or use this nifty contact form:</h2>
                     <!-- #contact-me -->
                     <div id="contact-me">
                       <div class="span6 offset3">

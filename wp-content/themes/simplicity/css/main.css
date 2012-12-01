@@ -307,6 +307,7 @@ ul.collapse-list li {
 
 #work #project-content blockquote {
 	color: #999;
+	text-shadow: 1px 1px #efefef;
 	text-align: center;
 	font-style: italic;
 	font-size: 1.5em;

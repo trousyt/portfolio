@@ -54,12 +54,6 @@
               <!-- section#body -->
               <section id="body">
 
-              	<?php 
-              	// Start the page loop.
-              	while ( have_posts() ) : the_post();
-              		$custom_fields = get_post_custom();
-              	?>
-
                 <header>
                   <div class="row">
                     <div class="span7">
@@ -114,8 +108,6 @@
 
                 </div>
                 <!-- /.content -->
-                
-                <?php endwhile; ?>
 
               </section>
               <!-- /section#body -->

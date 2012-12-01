@@ -317,8 +317,11 @@ ul.collapse-list li {
 	margin: 10px 0 10px 10px;
 }
 
+#work #project-banner {
+	background-color: #999;
+}
 #work #project-banner aside strong {
-	font-size: .8em;
+	font-size: .9em;
 	color: #44c783;
 }
 

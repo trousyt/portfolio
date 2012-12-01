@@ -101,11 +101,10 @@ ini_set('display_errors', True);
                           </h2>
                           <div><strong>Categories</strong> <small><?php the_category(', ') ?></small></div>
                           <div><strong>Tags</strong> <small>Test</small></div>
-                      </aside>
+                        </aside>
                         <?php kd_mfi_the_featured_image( 'project-banner', 'portfolio', 'project-banner-size' ) ?>
-                        
+                        </div> 
                       </div>
-                      
                     </div>
 
                     <div id="project-content" class="buffer">

@@ -26,7 +26,7 @@ function simp_enqueue_scripts() {
 	    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', false, '2.0', 'all');
 	    wp_enqueue_style('bootstrap-responsive', get_stylesheet_directory_uri() . '/css/bootstrap-responsive.min.css', false, '2.0', 'all');
 		wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css', false, '1.0', 'all');
-		wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
+		wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Headland+One|Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
 	}
 }
 

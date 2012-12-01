@@ -3,8 +3,7 @@
    ========================================================================== */
 body {
 	background: url('../img/layout_main-background.png') repeat;
-	font-family: Scada, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-family: 'Headland One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #content-wrapper {

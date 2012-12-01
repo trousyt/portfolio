@@ -285,7 +285,7 @@ ul.collapse-list li {
 }
 
 /* FOOTER */
-.footer {
+.footer .container {
 	font-size: 14px;
 	margin-top: 80px;
 	padding-top: 20px;

@@ -93,7 +93,7 @@
 						and it doesn't exist. Hmm... Perhaps a Tardis would come in handy. <?php echo $casemessage; ?>  Anyhow, we <em>profusely</em> apologize for the error! May we suggest using the above navigation or the back button in your browser to get out of here?
 					</p>
 					<p class="center-align">
-						<img src="<?php bloginfo( 'template_directory' ) . '/img/layout_404.png' ?>" title="Page not found.">
+						<img src="<?php bloginfo( 'template_directory' ) ?>/img/layout_404.png" title="Page not found.">
 					</p>
 
                 </div>

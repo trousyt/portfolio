@@ -32,7 +32,7 @@ blockquote p {
 	text-shadow: 1px 1px #fff;
 	font-style: italic;
 	font-size: 1.4em;
-	line-height: 1.1em;
+	line-height: 1.3em;
 }
 
 #body-wrapper h1 {
@@ -83,7 +83,7 @@ a:visited {
 }
 
 .content {
-	line-height: 1.2em;
+	line-height: 1.5em;
 }
 .content .alignright {
 	margin: 10px 0 10px 10px;
@@ -439,7 +439,7 @@ header .divider {
 	box-shadow:         0px 6px 30px rgba(50, 50, 50, 0.75);*/
 }
 
-header h3 small.tagline {
+header h3.tagline {
 	line-height: 1em;
 }
 

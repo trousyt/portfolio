@@ -66,8 +66,8 @@ ini_set('display_errors', True);
                 <header>
                   <div class="row">
                     <div class="span7">
-                      <h3>
-                          <small class="tagline">
+                      <h3 class="tagline">
+                          <small>
                           <?php 
                             $tagline_meta = get_post_meta( get_the_ID(), 'tagline', true );
                             if ( $tagline_meta != '' ) {

@@ -305,7 +305,7 @@ ul.collapse-list li {
 	color: #44c783;
 }
 
-#work #project-content blockquote {
+#work #project-content blockquote p {
 	color: #999;
 	text-shadow: 1px 1px #fff;
 	text-align: center;

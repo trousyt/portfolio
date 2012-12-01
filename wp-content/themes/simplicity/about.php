@@ -31,16 +31,16 @@ ini_set('display_errors', True);
                   <div class="nav pull-right">
                     <ul>
                       <li class="contact nav-item">
-                        <a href="contact.html"><div class="bl contact-back"></div>Contact</a>
+                        <a href="/contact"><div class="bl contact-back"></div>Contact</a>
                       </li>
                       <li class="about nav-item active">
-                        <a href="about.html"><div class="bl about-back"></div>About</a>
+                        <a href="/about"><div class="bl about-back"></div>About</a>
                       </li>
                       <li class="work nav-item">
-                        <a href="work.html"><div class="bl work-back"></div>Work</a>
+                        <a href="/portfolio"><div class="bl work-back"></div>Work</a>
                       </li>
                       <li class="blog nav-item">
-                        <a href="blog.html"><div class="bl blog-back"></div>Blog</a>
+                        <a href="/blog"><div class="bl blog-back"></div>Blog</a>
                       </li>
                     </ul>
                   </div>

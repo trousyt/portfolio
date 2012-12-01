@@ -83,6 +83,9 @@ a:visited {
 .right-align {
 	text-align: right;
 }
+.content .alignright {
+	margin: 10px 0 10px 10px;
+}
 
 /* For blocks - Used for compatibility with WP */
 .alignright {
@@ -311,10 +314,6 @@ ul.collapse-list li {
 }
 #work a {
 	color: #44c783;
-}
-
-#work #project-content .alignright {
-	margin: 10px 0 10px 10px;
 }
 
 #work #project-banner {

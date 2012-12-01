@@ -3,6 +3,7 @@
    ========================================================================== */
 body {
 	background: url('../img/layout_main-background.png') repeat;
+	font-family: Scada, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #content-wrapper {
@@ -31,9 +32,8 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 blockquote p {
 	color: #999;
 	text-shadow: 1px 1px #fff;
-	text-align: center;
 	font-style: italic;
-	font-size: 2.5em;
+	font-size: 2.1em;
 	line-height: 1.1em;
 }
 

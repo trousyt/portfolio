@@ -30,13 +30,13 @@ ini_set('display_errors', True);
                 <div class="span6">
                   <div class="nav pull-right">
                     <ul>
-                      <li class="contact nav-item">
+                      <li class="contact nav-item active">
                         <a href="/contact"><div class="bl contact-back"></div>Contact</a>
                       </li>
                       <li class="about nav-item">
                         <a href="/about"><div class="bl about-back"></div>About</a>
                       </li>
-                      <li class="work nav-item active">
+                      <li class="work nav-item">
                         <a href="/portfolio"><div class="bl work-back"></div>Portfolio</a>
                       </li>
                       <li class="blog nav-item">
@@ -64,7 +64,8 @@ ini_set('display_errors', True);
                 
                 <header>
                   <div class="row">
-                    <h3 class="tagline">
+                    <div class="span7">
+                      <h3 class="tagline">
                         <small>
                           <?php 
                             $tagline_meta = get_post_meta( get_the_ID(), 'tagline', true );
@@ -74,8 +75,9 @@ ini_set('display_errors', True);
                           ?>
                           </small>
                       </h3>
+                    </div>
                     <div class="span3 right-align">
-                      <h1>Contact</h1>
+                      <h1>Portfolio</h1>
                     </div>
                   </div>
                   <div class="row">

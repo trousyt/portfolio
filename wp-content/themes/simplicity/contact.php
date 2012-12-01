@@ -89,7 +89,7 @@ ini_set('display_errors', True);
                   <?php the_content() ?>
                   <p>
                     <h2>Use these nifty social mediums (or vanilla email):</h2>
-                    <ul class="unstyled collapse-list padl buffer center-align">
+                    <ul class="unstyled collapse-list padl buffer">
                       <li><a href="http://github.com/trousyt"><i class="icon-heart"></i> Visit me on GitHub</a></li>
                       <li><a href="http://twitter.com/trousyt"><i class="icon-heart"></i> Follow me on Twitter</a></li>
                       <li><a href="http://www.linkedin.com/pub/troy-parkinson/38/592/720"><i class="icon-heart"></i> Visit me on LinkedIn</a></li>

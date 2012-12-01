@@ -11,7 +11,6 @@
  * ENQUEUE SCRIPTS/STYLES
  * Enqueue javascript files and styles to be used site-wide.
  ********************************/
-add_action('wp_enqueue_scripts', 'simp_enqueue_scripts');
 function simp_enqueue_scripts() {
 	if (!is_admin()) {
 		/* Add Javascript */
@@ -29,5 +28,7 @@ function simp_enqueue_scripts() {
 		wp_enqueue_style('fonts', 'http://fonts.googleapis.com/css?family=Scada|Archivo+Narrow:700,400', false, '1.0', 'all');
 	}
 }
+
+add_action('wp_enqueue_scripts', 'simp_enqueue_scripts');
 
 ?>

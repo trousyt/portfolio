@@ -550,7 +550,7 @@ header .nav li {
 
 /* CONTACT FORM */
 #contact-me {
-	margin: 10px 0 40px 45px;
+	margin: 0 0 40px 45px;
 	padding-top: 50px;
 	height: 460px;
 	background: url('../img/layout_main-contact-me-background.png') no-repeat;

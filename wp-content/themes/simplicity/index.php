@@ -87,7 +87,9 @@
 
           <script>
             jQuery(document).ready(function($) {
-              $('#slides').slides();
+              $('#slides').slides({
+                play: 5000
+              });
             })
           </script>
       

@@ -352,6 +352,7 @@ ul.collapse-list li {
 	font-size: .8em;
 }
 #work .portfolio-item .tags a:hover {
+	border-bottom: none;
 	background-color: #44c783;
 	color: white;
 }

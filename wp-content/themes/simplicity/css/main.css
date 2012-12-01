@@ -306,17 +306,17 @@ ul.collapse-list li {
 }
 
 #work #project-content blockquote {
-	background-color: gray;
+	color: #999;
 	text-align: center;
 	font-style: italic;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 #work #project-content .alignright {
 	margin: 10px 0 10px 10px;
 }
 
 #work #project-banner aside strong {
-	text-size: .8em;
+	text-size: .5em;
 	color: #44c783;
 }
 

@@ -346,13 +346,13 @@ ul.collapse-list li {
 #work .portfolio-item .title {
 	font-size: 2em;
 }
-#work .portfolio-item .cats {
+#work .portfolio-item .cats, #work .project-banner .cats {
 	font-size: 1.5em;
 }
-#work .portfolio-item .tags {
+#work .portfolio-item .tags, #work .project-banner .tags {
 	font-size: .8em;
 }
-#work .portfolio-item .tags a:hover {
+#work .portfolio-item .tags a:hover, #work .project-banner .tags a:hover {
 	border-bottom: none;
 	background-color: #44c783;
 	color: white;
@@ -559,8 +559,8 @@ header .nav li {
 	width: 70%;
 }
 #contact-me .submit {
-	width: 70%;
-}
+	width: 70%
+;}
 
 
 /* MQ: SCREEN SIZE: 1140PX */

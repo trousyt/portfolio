@@ -78,7 +78,6 @@
 						  if (!isset($_SERVER['HTTP_REFERER'])) {
 					    	#politely blames the user for all the problems they caused
 					        echo "tried going to "; #starts assembling an output paragraph
-							$casemessage = "All is not lost!";
 						  } elseif (isset($_SERVER['HTTP_REFERER'])) {
 						    #this will help the user find what they want, and email me of a bad link
 							echo "clicked a link to"; #now the message says You clicked a link to...
@@ -86,11 +85,10 @@
 							$failuremess = "A user tried to go to $website" . $_SERVER['REQUEST_URI'] . " and received a 404 (page not found) error. ";
 							$failuremess .= "It wasn't their fault, so try fixing it. They came from ".$_SERVER['HTTP_REFERER'];
 							mail($adminemail, "Bad Link To ".$_SERVER['REQUEST_URI'], $failuremess, "From: $websitename <noreply@$website>"); #email you about problem
-							$casemessage = "An administrator has been emailed about this broken link."; #set a friendly message
 						  }
 						  echo " " . $website . $_SERVER['REQUEST_URI']; 
 						?> 
-						and it doesn't exist. Hmm... Perhaps a Tardis would come in handy. <?php echo $casemessage; ?>  Anyhow, we <em>profusely</em> apologize for the error! May we suggest using the above navigation or the back button in your browser to get out of here?
+						and it doesn't exist. Hmm... Perhaps a Tardis would come in handy here. Anyhow, we <em>profusely</em> apologize for the error! May we suggest using the above navigation or the back button in your browser to get out of here?
 					</p>
 					<p class="center-align">
 						<img src="<?php bloginfo( 'template_directory' ) ?>/img/layout_404.png" title="Page not found.">

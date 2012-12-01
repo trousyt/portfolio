@@ -98,7 +98,7 @@ Template Name: Portfolio
                       </div>
                       <aside>
                       	<div><a href="<?php the_permalink() ?>"><?php the_title() ?></a> / <?php the_category(', ') ?></div>
-                      	<div><small>Tags</small></div>
+                      	<div><small><?php the_tags('', ' ') ?></small></div>
                       </aside>
                     </div>
 										

@@ -30,7 +30,7 @@ Template Name: About
                         <a href="/about"><div class="bl about-back"></div>About</a>
                       </li>
                       <li class="work nav-item">
-                        <a href="/portfolio"><div class="bl work-back"></div>Work</a>
+                        <a href="/portfolio"><div class="bl work-back"></div>Portfolio</a>
                       </li>
                       <li class="blog nav-item">
                         <a href="/blog"><div class="bl blog-back"></div>Blog</a>

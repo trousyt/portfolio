@@ -86,7 +86,7 @@ ini_set('display_errors', True);
                 </header>
                 
                 <div class="content buffer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla dignissim dui, et volutpat ante tempor in. Aenean congue, libero id vestibulum volutpat, ipsum est fringilla metus, non faucibus odio urna vitae velit. Cras felis lectus, varius quis tristique at, vestibulum vel dui. Etiam fermentum suscipit nibh eget faucibus. Etiam interdum consequat ipsum, non mattis justo interdum sed. Nullam eleifend feugiat metus euismod molestie. Morbi id convallis dui. Nunc placerat posuere pharetra. Sed a lorem ipsum.</p>
+                  <?php the_content() ?>
                   <p>
                     <!-- #contact-me -->
                     <div id="contact-me">
@@ -94,7 +94,7 @@ ini_set('display_errors', True);
                         <div id="contact-me-inner">
                           <form id="contact-form">
                             <div class="info row">
-                              <h2>Who are you?</h2>
+                              <h2>First, briefly introduce yourself.</h2>
                               <input id="name" type="text" placeholder="Name" />
                               <input id="email" type="email" placeholder="Email" />
                             </div>
@@ -103,7 +103,7 @@ ini_set('display_errors', True);
                               <textarea rows="5"></textarea>
                             </div>
                             <div class="row">
-                               <button class="submit btn btn-inverse btn-large">Say hello!</button>
+                               <button class="submit btn btn-inverse btn-large">Send it off!</button>
                             </div>
                           </form>
                         </div>

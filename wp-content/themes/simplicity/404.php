@@ -54,10 +54,8 @@
               <section id="body">
 
                 <header>
-                  <div class="row">
-                    <div class="span10 center-align">
-                      <h1>Oh no! We can't find that page!</h1>
-                    </div>
+                  <div class="row center-align">
+                    <h1>Oh no! We can't find that page!</h1>
                   </div>
                   <div class="row">
                     <div class="divider1"></div>

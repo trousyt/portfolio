@@ -97,8 +97,9 @@ Template Name: Portfolio
                         <a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><?php the_post_thumbnail('project-thumb-size') ?></a>
                       </div>
                       <aside>
-                      	<div><a href="<?php the_permalink() ?>"><?php the_title() ?></a> / <?php the_category(', ') ?></div>
-                      	<div><small><?php the_tags('', ' ') ?></small></div>
+                      	<div class="title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></div>
+                        <div class="cats"><?php the_category(', ') ?></div>
+                      	<div class="tags"><small><?php the_tags('', ' ') ?></small></div>
                       </aside>
                     </div>
 										

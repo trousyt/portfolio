@@ -342,13 +342,22 @@ ul.collapse-list li {
 	margin-bottom: 10px;
 	background-color: #e3e3e3;
 }
+#work .portfolio-item .title {
+	font-size: 2em;
+}
+#work .portfolio-item .cats {
+	font-size: 1.5em;
+}
+$work .portfolio-item .tags {
+	font-size: .8em;
+}
 #work .portfolio-item aside {
 	padding: 2px;
-	font-size: 2em;
 	color: gray;
 	line-height: 1.1em;
-
-
+}
+#work .portfolio-item aside small {
+	font-size: 1.2em;
 }
 
 /* ==========================================================================

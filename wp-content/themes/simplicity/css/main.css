@@ -548,8 +548,8 @@ header .nav li {
 }
 */
 
-#index #contact-me h2, #index #contact-me h3 {
-	text-shadow: 2px 2px black;
+#contact-me h2, #index #contact-me h3 {
+	text-shadow: 1px 1px black;
 	color: white;
 }
 #contact-me input[type='text'], input[type='email'] {

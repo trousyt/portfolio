@@ -24,7 +24,7 @@ ini_set('display_errors', True);
               <div class="row">
                 <div class="span4"> <!-- offset 2 -->
                   <div class="logo">
-                    <a href="/">Placeholder</a>
+                    <a href="/"><img src="<?php bloginfo( 'template_path' ) . '/img/layout_main-logo.png' ?>"></a>
                   </div>
                 </div>
                 <div class="span6">
@@ -87,7 +87,7 @@ ini_set('display_errors', True);
                 
                 <div class="content buffer">
                   <?php the_content() ?>
-                  <p>
+                  <p class="buffer">
                     <h2>Use these nifty social mediums (or vanilla email):</h2>
                     <ul class="unstyled collapse-list padl buffer">
                       <li><a href="http://github.com/trousyt"><i class="icon-heart"></i> Visit me on GitHub</a></li>

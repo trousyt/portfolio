@@ -23,11 +23,11 @@
                   <a href="/"><img src="<?php echo get_template_directory_uri() . '/img/layout_main-logo.png' ?>"></a>
                 </div>
               </div>
-              <div class="divider1"></div>
             </header>
             
             <!-- #body-wrapper -->
             <div id="body-wrapper" class="buffer">
+              <div class="divider2"></div>
               <!-- #hero -->
               <div id="hero">
                 <div class="row">
@@ -42,10 +42,10 @@
                       </div>
                   </div>
                 </div>
-                <div class="divider1"></div>
               </div>
               <!-- /#hero -->
-            
+              <div class="divider1"></div>
+              
               <!-- .row -->
               <!--<div class="row">-->
                 <!-- #body-content -->

@@ -471,10 +471,16 @@ ul.collapse-list.padr li {
 	text-align: center;
 	padding-bottom: 10px;
 }
-.divider1 {
+
+.divider1, .divider2 {
 	width: 100%;
 	height: 17px;
+}
+.divider1 {
 	background: url('../img/layout_main-header-border-btm.png') repeat-x left bottom;
+}
+.divider2 {
+	background: url('../img/layout_main-header-border-top.png') repeat-x left bottom;
 }
 
 header .divider {

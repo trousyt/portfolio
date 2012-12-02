@@ -17,7 +17,7 @@ Template Name: Portfolio
               <div class="row">
                 <div class="span4"> <!-- offset 2 -->
                   <div class="logo">
-                    <a href="/">Placeholder</a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri() . '/img/layout_main-logo.png' ?>"></a>
                   </div>
                 </div>
                 <div class="span6">

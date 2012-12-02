@@ -20,7 +20,7 @@
             <header class="buffer ">
               <div class="row">
                 <div class="logo">
-                  <div class="span3">Placeholder</div>
+                  <a href="/"><img src="<?php echo get_template_directory_uri() . '/img/layout_main-logo.png' ?>"></a>
                 </div>
               </div>
               <div class="divider1"></div>

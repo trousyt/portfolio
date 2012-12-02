@@ -469,7 +469,7 @@ ul.collapse-list.padr li {
 #index header, header .logo {
 	height: 80px;
 	text-align: center;
-	margin-top: 10px;
+	padding-bottom: 10px;
 }
 .divider1 {
 	width: 100%;

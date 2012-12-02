@@ -307,6 +307,7 @@ ul.collapse-list.padr li {
 	color: black;
 }
 .footer a, .footer a:hover {
+	white-space: no-wrap;
 	color: white;
 }
 .footer a {

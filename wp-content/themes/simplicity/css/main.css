@@ -468,6 +468,8 @@ ul.collapse-list.padr li {
 /* HEADER */
 #index header, header .logo {
 	height: 80px;
+	text-align: center;
+	margin-top: 10px;
 }
 .divider1 {
 	width: 100%;

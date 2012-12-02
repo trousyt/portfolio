@@ -478,9 +478,11 @@ ul.collapse-list.padr li {
 }
 .divider1 {
 	background: url('../img/layout_main-header-border-btm.png') repeat-x left bottom;
+	margin-top: 20px;
 }
 .divider2 {
 	background: url('../img/layout_main-header-border-top.png') repeat-x left bottom;
+	margin-bottom: 20px;
 }
 
 header .divider {
@@ -528,7 +530,8 @@ header .nav li {
 
 /* HERO */
 #index #hero {
-	margin: 40px 0;
+	margin: 0;
+	padding: 20px 0;
 }
 #index #hero h1 {
 	line-height: 1.2em;

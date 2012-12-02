@@ -466,6 +466,9 @@ ul.collapse-list.padr li {
    INDEX
    ========================================================================== */
 /* HEADER */
+#index header .logo {
+	text-align: center;
+}
 #index header, header .logo {
 	height: 80px;
 	padding-bottom: 10px;

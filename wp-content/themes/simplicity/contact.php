@@ -24,7 +24,7 @@ ini_set('display_errors', True);
               <div class="row">
                 <div class="span4"> <!-- offset 2 -->
                   <div class="logo">
-                    <a href="/"><img src="<?php get_template_directory_uri() . '/img/layout_main-logo.png' ?>"></a>
+                    <a href="/"><img src="<?php get_bloginfo('template_url') . '/img/layout_main-logo.png' ?>"></a>
                   </div>
                 </div>
                 <div class="span6">

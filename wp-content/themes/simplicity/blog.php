@@ -84,7 +84,7 @@ Template Name: Blog
                     <?php wp_tag_cloud(); ?>
                   </div>
                   
-                  <!-- Blog Entry>
+                  <!-- Blog Entry> -->
                   <div class="blog-entry">
   					        <!-- Title -->
   					        <div class="blog-title">

@@ -400,11 +400,13 @@ ul.collapse-list.padr li {
 .blog-entry {
 	font-size: 4em;
 	color: black;
+	line-height: 30px;
 }
 
 .blog-entry a {
 	color: black;
-	text-decoration: 4px dotted black;
+	text-decoration: none;
+	border-bottom: 2px dotted black;
 }
 
 .blog-entry .blog-title {
@@ -420,10 +422,6 @@ ul.collapse-list.padr li {
 
 .blog-entry .blog-body {
 	font-size: .5em;
-}
-
-.blog-entry .blog-body a {
-	text-decoration: 2px dotted black;
 }
 
 #blog #blog-roll {

@@ -51,7 +51,7 @@ Template Name: Blog
 
               	<?php 
 	          	// Start the page loop.
-	          	if ( have_posts() );
+	          	//if ( have_posts() );
 	          	while ( have_posts() ) : the_post();
 	          	?>
 	                
@@ -107,9 +107,9 @@ Template Name: Blog
 
                 <?php endwhile; ?>
                 
-                <?php else; ?>
+                <?php //else; ?>
                 
-                <?php endif; ?>
+                <?php //endif; ?>
                 
               </section>
               <!-- /section#body -->

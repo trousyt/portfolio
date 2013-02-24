@@ -397,6 +397,30 @@ ul.collapse-list.padr li {
 	background-color: #7da7d9;
 }
 
+.blog-entry {
+	font-size: 4em;
+	color: black;
+}
+
+.blog-entry .blog-title {
+	font-size: 1em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.blog-entry .blog-date {
+	font-size: .6em;
+	font-style: italic;
+}
+
+.blog-entry .blog-body {
+	font-size: .8em;
+}
+
+.blog-entry .blog-body a {
+	text-decoration: 2px dotted black;
+}
+
 #blog #blog-roll {
 	
 }

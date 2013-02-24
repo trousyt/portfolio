@@ -402,6 +402,11 @@ ul.collapse-list.padr li {
 	color: black;
 }
 
+.blog-entry a {
+	color: black;
+	text-decoration: 4px dotted black;
+}
+
 .blog-entry .blog-title {
 	font-size: 1em;
 	font-weight: bold;
@@ -409,12 +414,12 @@ ul.collapse-list.padr li {
 }
 
 .blog-entry .blog-date {
-	font-size: .6em;
+	font-size: .5em;
 	font-style: italic;
 }
 
 .blog-entry .blog-body {
-	font-size: .8em;
+	font-size: .5em;
 }
 
 .blog-entry .blog-body a {

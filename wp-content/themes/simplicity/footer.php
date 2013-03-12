@@ -16,7 +16,7 @@
                 <li><a href="/contact" title="Contact">Contact</a></li>
                 <li><a href="/about" title="About Me">About</a></li>
                 <li><a href="/portfolio" title="Portfolio">Portfolio</a></li>
-                <li><a href="blog.troypark.com" title="Blog">Blog</a></li>
+                <li><a href="http://blog.troypark.com" title="Blog">Blog</a></li>
               </ul>
             </div>
             <div class="row">

@@ -33,7 +33,7 @@ Template Name: Portfolio
                         <a href="/portfolio"><div class="bl work-back"></div>Portfolio</a>
                       </li>
                       <li class="blog nav-item">
-                        <a href="/blog"><div class="bl blog-back"></div>Blog</a>
+                        <a href="blog.troypark.com"><div class="bl blog-back"></div>Blog</a>
                       </li>
                     </ul>
                   </div>

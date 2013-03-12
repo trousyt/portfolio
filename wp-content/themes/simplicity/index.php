@@ -73,7 +73,7 @@
                           <li class="nav-button contact"><a href="/contact" title="Contact">Contact</a></li>
                           <li class="nav-button about"><a href="/about" title="About">About</a></li>
                           <li class="nav-button work"><a href="/portfolio" title="Portfolio">Portfolio</a></li>
-                          <li class="nav-button blog"><a href="/blog" title="Blog">Blog</a></li>
+                          <li class="nav-button blog"><a href="blog.troypark.com" title="Blog">Blog</a></li>
                         </ul>
                       </div>
                     </div>                   

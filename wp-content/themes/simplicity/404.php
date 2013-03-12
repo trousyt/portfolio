@@ -84,7 +84,7 @@
 							$failuremess .= "It wasn't their fault, so try fixing it. They came from ".$_SERVER['HTTP_REFERER'];
 							mail($adminemail, "Bad Link To ".$_SERVER['REQUEST_URI'], $failuremess, "From: $websitename <noreply@$website>"); #email you about problem
 						  }
-						  echo " " . $website . $_SERVER['REQUEST_URI']; 
+						  echo " <span class=\"smallcaps\">" . $website . $_SERVER['REQUEST_URI'] . "</span>" 
 						?> 
 						and it doesn't exist. Hmm... Perhaps a Tardis would come in handy here. Anyhow, we <em>profusely</em> apologize for the error! May we suggest using the above navigation or the back button in your browser to get out of here?
 					</p>
